@@ -1,23 +1,29 @@
 <template>
   <div
-    class="flex gap-2 items-center py-2 px-3 rounded-lg w-full"
+    class="flex gap-3 items-center h-10 px-3 rounded-lg w-full hover:bg-primary-100"
     :class="{
-      'bg-primary-100': isActive,
+      'bg-primary-50': isActive,
       'bg-transparent': !isActive,
     }"
   >
-    <Icon
-      :name="{
-        iconActive: isActive,
-        iconInactive: iconInactive,
-      }"
-      size="1.6em"
+    <div class="h-full w-6 flex justify-center items-center">
+      <Icon
+        :name="iconSuffix"
+        :size="sizeSuffix"
+        :class="{
+          'text-darkGray-950': isActive,
+          'text-darkGray-900': !isActive,
+        }"
+      />
+    </div>
+    <span
+      class="text-base"
       :class="{
-        'text-darkGray-950': isActive,
-        'text-darkGray-900': !isActive,
+        'text-darkGray-950 font-semibold': isActive,
+        'text-darkGray-900 font-medium': !isActive,
       }"
-    />
-    <span class="font-semibold text-base text-darkGray-950">Home</span>
+      ><slot
+    /></span>
   </div>
 </template>
 
@@ -27,12 +33,15 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  icons: {
+  icon: {
     type: String,
   },
 });
 
-const iconActive = computed(() => `solar:${props.icon}-bold`);
-const iconInactive = computed(() => `solar:${props.icon}-outline`);
 const isActive = computed(() => props.active === true);
+const iconSuffix = computed(() => {
+  const suffix = isActive.value ? "bold" : "linear";
+  return `solar:${props.icon}-${suffix}`;
+});
+const sizeSuffix = computed(() => (isActive.value ? "1.6em" : "1.4em"));
 </script>
