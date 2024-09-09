@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Web Development",
+    "slug": "web-development"
+  },
+  {
+    "id": 2,
+    "name": "Mechine Learning",
+    "slug": "mechine-learning"
+  },
+  {
+    "id": 3,
+    "name": "Game Design",
+    "slug": "game-design"
+  },
+  {
+    "id": 4,
+    "name": "Accountant",
+    "slug": "accountant"
+  },
+  {
+    "id": 5,
+    "name": "Data Science",
+    "slug": "data-science"
+  }
+]

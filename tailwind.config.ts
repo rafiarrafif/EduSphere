@@ -74,6 +74,7 @@ export default <Partial<Config>>{
       },
       fontFamily: {
         sans: ["Inter"],
+        barlow: ["barlow", "sans-serif"],
       },
     },
   },

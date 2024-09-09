@@ -1,5 +1,7 @@
 <template>
-  <div>
-    <h1>pp</h1>
+  <div class="w-full">
+    <PagesLandingpageHero />
+    <PagesLandingpageSponsors />
+    <PagesLandingpageSelectCourse />
   </div>
 </template>

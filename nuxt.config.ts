@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
+  plugins: ["~/plugins/directives.ts"],
   modules: [
     "@pinia/nuxt",
     "@pinia-plugin-persistedstate/nuxt",
@@ -16,6 +17,7 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Inter: "100..900",
+      Barlow: "100..900",
     },
   },
   css: ["animate.css/animate.min.css"],
