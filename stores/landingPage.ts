@@ -5,6 +5,7 @@ interface landingPageStore {
   searchFocus: HTMLInputElement | null;
   isOnEdgeTop: boolean;
   selectCourses: string;
+  hoveredCourseCard: number | null;
 }
 
 export const useLandingPageStore = defineStore("landingPageStore", {
@@ -13,6 +14,7 @@ export const useLandingPageStore = defineStore("landingPageStore", {
     searchFocus: null,
     isOnEdgeTop: true,
     selectCourses: "web-development",
+    hoveredCourseCard: null,
   }),
   actions: {
     setFocusSearch(el: HTMLInputElement) {
@@ -29,6 +31,9 @@ export const useLandingPageStore = defineStore("landingPageStore", {
     },
     setSelectCourses(courses: string) {
       this.selectCourses = courses;
+    },
+    setHoveredCard(cardID: number) {
+      this.hoveredCourseCard = cardID;
     },
   },
 });

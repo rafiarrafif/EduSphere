@@ -2,13 +2,13 @@
   <div>
     <div id="text-hero" class="w-full pt-60">
       <h1
-        class="text-center text-darkGray-950 font-extrabold text-7xl animate__animated animate__fadeInUp"
+        class="text-center text-darkGray-950 font-extrabold text-7xl max-sm:text-5xl max-md:text-6xl animate__animated animate__fadeInUp"
       >
         Don't Just
         <span class="text-secondary-500 shadow-secondary">Learn</span>—
       </h1>
       <h1
-        class="text-center text-darkGray-950 font-extrabold text-7xl mt-2 animate__animated animate__fadeInUp"
+        class="text-center text-darkGray-950 font-extrabold text-7xl max-sm:text-5xl max-md:text-6xl mt-2 animate__animated animate__fadeInUp"
         style="animation-delay: 0.1s"
       >
         <span class="text-secondary-500 shadow-secondary">Master</span>

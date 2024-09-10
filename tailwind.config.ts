@@ -75,6 +75,10 @@ export default <Partial<Config>>{
       fontFamily: {
         sans: ["Inter"],
         barlow: ["barlow", "sans-serif"],
+        raleway: ["raleway", "sans-serif"],
+      },
+      fontSize: {
+        xxs: "0.625rem", // 10px
       },
     },
   },
@@ -100,5 +104,6 @@ export default <Partial<Config>>{
 
       api.addUtilities(newUtilities);
     },
+    require("@tailwindcss/aspect-ratio"),
   ],
 };

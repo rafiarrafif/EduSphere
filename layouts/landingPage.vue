@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="w-full h-fit fixed z-50">
-      <PagesLandingpageNavDesktop v-if="ifDesktop" />
+      <PagesLandingpageNavDesktop v-if="isDesktop" />
       <PagesLandingpageNavMobile v-else />
     </div>
     <div style="height: 12232px" class="bg-primary-50">
@@ -11,17 +11,13 @@
 </template>
 
 <script lang="ts" setup>
-const ifDesktop = ref();
-
-const updateWindowSize = () => {
-  ifDesktop.value = window.innerWidth >= 854;
-};
-
-onMounted(() => {
-  updateWindowSize();
-  window.addEventListener("resize", updateWindowSize);
-});
-onUnmounted(() => {
-  window.removeEventListener("resize", updateWindowSize);
+import { useDeviceDetection } from "~/composables/useDeviceDetection";
+import { useDeviceType } from "#imports";
+useDeviceDetection();
+const deviceType = useDeviceType();
+const isDesktop = computed(() => {
+  return (
+    deviceType.deviceType === "laptop" || deviceType.deviceType === "desktop"
+  );
 });
 </script>

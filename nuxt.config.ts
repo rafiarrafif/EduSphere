@@ -20,5 +20,9 @@ export default defineNuxtConfig({
       Barlow: "100..900",
     },
   },
-  css: ["animate.css/animate.min.css"],
+  css: [
+    "animate.css/animate.min.css",
+    "@/assets/css/scrollbar.css",
+    "@/assets/css/hide-scrollbar.css",
+  ],
 });

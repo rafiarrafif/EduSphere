@@ -1,0 +1,107 @@
+[
+  {
+    "title": "VueJS Full Class - Vue Beginner to Master",
+    "description": "Learn how to build modern, scalable, and reactive web applications with Vue.js. This course takes you from the basics of Vue to advanced techniques, empowering you to create dynamic user experiences effortlessly.",
+    "benefits": [
+      "Vue.js Fundamentals: Master reactive data binding, directives, and Vue component architecture.",
+      "State Management with Vuex: Learn how to efficiently manage application state for large-scale projects.",
+      "Building SPAs: Create Single Page Applications (SPAs) with Vue Router and Vue CLI for real-world projects."
+    ],
+    "image": "vue.jpg",
+    "mentor": "david_abhi",
+    "score": 4.6,
+    "review": 2182183,
+    "original_price": 439000,
+    "discounted_price": 363300
+  },
+  {
+    "title": "Mastering CSS - From Basics to Advanced",
+    "description": "Transform your web design skills with in-depth CSS training. This course covers everything from basic styling to advanced layouts and animations, helping you create visually stunning and responsive designs.",
+    "benefits": [
+      "CSS Fundamentals: Learn the core principles of CSS and its best practices.",
+      "Advanced Layouts: Create complex layouts with Flexbox and CSS Grid.",
+      "Animations and Transitions: Add dynamic effects to enhance user interaction."
+    ],
+    "image": "css.jpg",
+    "mentor": "susan_lee",
+    "score": 4.8,
+    "review": 1478523,
+    "original_price": 359000,
+    "discounted_price": 305300
+  },
+  {
+    "title": "JavaScript Essentials for Web Design",
+    "description": "Dive into JavaScript and discover how to use it to enhance web design. This course covers everything from basic scripting to advanced techniques for interactive and responsive web designs.",
+    "benefits": [
+      "JavaScript Basics: Understand the fundamentals of JavaScript and how it integrates with HTML and CSS.",
+      "DOM Manipulation: Learn to create dynamic and interactive web pages.",
+      "Event Handling: Master event-driven programming to create responsive user interfaces."
+    ],
+    "image": "js.jpg",
+    "mentor": "michael_johnson",
+    "score": 4.7,
+    "review": 1987654,
+    "original_price": 419000,
+    "discounted_price": 355200
+  },
+  {
+    "title": "Responsive Web Design with Bootstrap",
+    "description": "Learn how to build mobile-first, responsive websites using Bootstrap. This course covers the fundamentals of Bootstrap and how to use its components to create attractive and functional web designs.",
+    "benefits": [
+      "Bootstrap Basics: Get started with the core Bootstrap framework.",
+      "Responsive Design: Create layouts that work on any device or screen size.",
+      "Customizing Bootstrap: Tailor Bootstrap components to fit your unique design needs."
+    ],
+    "image": "bootstrap.jpg",
+    "mentor": "jessica_taylor",
+    "score": 4.5,
+    "review": 2345678,
+    "original_price": 389000,
+    "discounted_price": 330300
+  },
+  {
+    "title": "UX/UI Design Principles for Beginners",
+    "description": "Explore the essentials of UX/UI design and learn how to create user-friendly interfaces. This course provides a foundation in design principles, user research, and prototyping techniques to improve user experience.",
+    "benefits": [
+      "UX Fundamentals: Learn the basics of user experience design and research.",
+      "UI Design Principles: Discover how to create visually appealing and intuitive interfaces.",
+      "Prototyping and Testing: Develop and test prototypes to validate your design ideas."
+    ],
+    "image": "ux_ui.jpg",
+    "mentor": "emily_smith",
+    "score": 4.9,
+    "review": 1098765,
+    "original_price": 449000,
+    "discounted_price": 382300
+  },
+  {
+    "title": "Design Systems and Components",
+    "description": "Build consistent and scalable design systems with this comprehensive course. Learn how to create reusable components and establish a design language that ensures a cohesive user experience across your projects.",
+    "benefits": [
+      "Design System Basics: Understand the principles of design systems and their benefits.",
+      "Creating Components: Develop reusable UI components for consistency and efficiency.",
+      "Implementation Strategies: Learn how to integrate your design system into real-world projects."
+    ],
+    "image": "design_systems.jpg",
+    "mentor": "alex_brown",
+    "score": 4.6,
+    "review": 1234567,
+    "original_price": 429000,
+    "discounted_price": 366900
+  },
+  {
+    "title": "Introduction to Web Design with HTML & CSS",
+    "description": "Kickstart your journey into web design with this beginner-friendly course. Learn how to create and style web pages using HTML and CSS, and gain the skills needed to design beautiful and functional websites.",
+    "benefits": [
+      "HTML Basics: Master the structure of web pages with HTML.",
+      "CSS Styling: Learn how to apply styles and layout techniques with CSS.",
+      "Responsive Design: Ensure your websites look great on any device or screen size."
+    ],
+    "image": "html_css.jpg",
+    "mentor": "olivia_jones",
+    "score": 4.4,
+    "review": 1567890,
+    "original_price": 349000,
+    "discounted_price": 297300
+  }
+]
