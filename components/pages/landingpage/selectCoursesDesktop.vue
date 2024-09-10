@@ -48,17 +48,47 @@
           </button>
         </nuxt-link>
       </div>
-      <div class="flex gap-4 mt-8">
-        <div v-for="(course, index) in courses" :key="index">
-          <CardsSelectCoursesLandingpage
-            :name="course.title"
-            :mentor="course.mentor"
-            :star="course.score"
-            :review="course.review"
-            :price="course.original_price"
-            :discount_price="course.discounted_price"
+      <div class="-mx-2 relative flex items-center">
+        <button
+          v-if="showLeftButton"
+          @click="scrollLeft"
+          class="absolute z-50 w-10 h-10 -left-2 bg-darkGray-950 border border-darkGray-800 shadow-lg rounded-full flex justify-center items-center"
+        >
+          <Icon
+            name="ic:baseline-chevron-left"
+            size="1.6em"
+            class="text-primary-50 -mt-0.5"
           />
+        </button>
+        <div
+          ref="selectRoadmapScroll"
+          class="flex gap-4 mx-2 pb-0.5 mt-8 w-full hide-scrollbar overflow-x-auto"
+        >
+          <div v-for="(course, index) in courses" :key="index">
+            <CardsSelectCoursesLandingpage
+              :name="course.title"
+              :description="course.description"
+              :benefits="course.benefits"
+              :image="course.image"
+              :mentor="course.mentor"
+              :star="course.score"
+              :review="course.review"
+              :price="course.original_price"
+              :discount_price="course.discounted_price"
+            />
+          </div>
         </div>
+        <button
+          v-if="showRightButton"
+          @click="scrollRight"
+          class="absolute z-50 w-10 h-10 -right-2 bg-darkGray-950 border border-darkGray-800 shadow-lg rounded-full flex justify-center items-center"
+        >
+          <Icon
+            name="ic:baseline-chevron-right"
+            size="1.6em"
+            class="text-primary-50 -mt-0.5"
+          />
+        </button>
       </div>
     </div>
   </div>
@@ -73,7 +103,7 @@ import type { Courses } from "~/types/courses";
 const LandingPageStore = useLandingPageStore();
 const { data: dataRoadmap, error: errorRoadmap } = await useAsyncData<
   ApiResponse<Roadmap[]>
->("dataRoadmap", () =>
+>("dataRoadmfuncap", () =>
   $fetch<ApiResponse<Roadmap[]>>("/api/get-roadmap-landingpage")
 );
 
@@ -95,6 +125,43 @@ const isActiveRoadmap = (roadmap: any) => {
 };
 const roadmaps = watchRoadmap.value;
 const courses = watchCourses.value;
+
+const selectRoadmapScroll = ref<HTMLElement | null>(null);
+const showLeftButton = ref(false);
+const showRightButton = ref(true);
+
+const scrollRight = () => {
+  if (selectRoadmapScroll.value) {
+    selectRoadmapScroll.value.scrollBy({
+      left: 600,
+      behavior: "smooth",
+    });
+  }
+};
+const scrollLeft = () => {
+  if (selectRoadmapScroll.value) {
+    selectRoadmapScroll.value.scrollBy({
+      left: -600,
+      behavior: "smooth",
+    });
+  }
+};
+const updateScrollButtons = () => {
+  if (selectRoadmapScroll.value) {
+    showLeftButton.value = selectRoadmapScroll.value.scrollLeft > 0;
+    showRightButton.value =
+      selectRoadmapScroll.value.scrollLeft +
+        selectRoadmapScroll.value.clientWidth <
+      selectRoadmapScroll.value.scrollWidth;
+  }
+};
+
+onMounted(() => {
+  if (selectRoadmapScroll.value) {
+    selectRoadmapScroll.value.addEventListener("scroll", updateScrollButtons);
+    updateScrollButtons();
+  }
+});
 </script>
 
 <style scoped>

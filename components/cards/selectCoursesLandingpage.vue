@@ -12,7 +12,9 @@
         <h1 class="font-bold leading-5">
           {{ props.name }}
         </h1>
-        <span class="flex text-xs font-light">{{ props.mentor }}</span>
+        <span class="flex text-xs font-light">{{
+          formatMentor(props.mentor)
+        }}</span>
       </div>
       <div class="flex w-full gap-1 mt-1 items-center">
         <span class="text-sm font-bold">4.6</span>
@@ -50,4 +52,11 @@ const props = defineProps<{
   price: number;
   discount_price: number;
 }>();
+
+function formatMentor(input: string): string {
+  return input
+    .split("_")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
+}
 </script>
