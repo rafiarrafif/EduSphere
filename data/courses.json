@@ -12,7 +12,8 @@
     "score": 4.6,
     "review": 2182183,
     "original_price": 439000,
-    "discounted_price": 363300
+    "discounted_price": 363300,
+    "categories": "web-development"
   },
   {
     "title": "Mastering CSS - From Basics to Advanced",
@@ -27,7 +28,8 @@
     "score": 4.8,
     "review": 1478523,
     "original_price": 359000,
-    "discounted_price": 305300
+    "discounted_price": 305300,
+    "categories": "web-development"
   },
   {
     "title": "JavaScript Essentials for Web Design",
@@ -42,7 +44,8 @@
     "score": 4.7,
     "review": 1987654,
     "original_price": 419000,
-    "discounted_price": 355200
+    "discounted_price": 355200,
+    "categories": "web-development"
   },
   {
     "title": "Responsive Web Design with Bootstrap",
@@ -57,7 +60,8 @@
     "score": 4.5,
     "review": 2345678,
     "original_price": 389000,
-    "discounted_price": 330300
+    "discounted_price": 330300,
+    "categories": "web-development"
   },
   {
     "title": "UX/UI Design Principles for Beginners",
@@ -72,7 +76,8 @@
     "score": 4.9,
     "review": 1098765,
     "original_price": 449000,
-    "discounted_price": 382300
+    "discounted_price": 382300,
+    "categories": "web-development"
   },
   {
     "title": "Design Systems and Components",
@@ -87,7 +92,8 @@
     "score": 4.6,
     "review": 1234567,
     "original_price": 429000,
-    "discounted_price": 366900
+    "discounted_price": 366900,
+    "categories": "web-development"
   },
   {
     "title": "Introduction to Web Design with HTML & CSS",
@@ -102,6 +108,7 @@
     "score": 4.4,
     "review": 1567890,
     "original_price": 349000,
-    "discounted_price": 297300
+    "discounted_price": 297300,
+    "categories": "web-development"
   }
 ]

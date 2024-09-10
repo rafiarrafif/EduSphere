@@ -10,9 +10,9 @@
     <div class="w-60 mt-2">
       <div class="flex flex-col gap-1.5">
         <h1 class="font-bold leading-5">
-          VueJS Full Class - Vue Beginner to Master
+          {{ props.name }}
         </h1>
-        <span class="flex text-xs font-light">David Abhi</span>
+        <span class="flex text-xs font-light">{{ props.mentor }}</span>
       </div>
       <div class="flex w-full gap-1 mt-1 items-center">
         <span class="text-sm font-bold">4.6</span>
@@ -37,3 +37,17 @@
     <!-- <div class="absolute top-[-120px] w-96 bg-black h-3"></div> -->
   </div>
 </template>
+
+<script lang="ts" setup>
+const props = defineProps<{
+  name: string;
+  description: string;
+  benefits: string[];
+  image: string;
+  mentor: string;
+  star: number;
+  review: number;
+  price: number;
+  discount_price: number;
+}>();
+</script>

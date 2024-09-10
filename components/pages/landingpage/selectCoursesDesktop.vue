@@ -49,7 +49,16 @@
         </nuxt-link>
       </div>
       <div class="flex gap-4 mt-8">
-        <CardsSelectCoursesLandingpage />
+        <div v-for="(course, index) in courses" :key="index">
+          <CardsSelectCoursesLandingpage
+            :name="course.title"
+            :mentor="course.mentor"
+            :star="course.score"
+            :review="course.review"
+            :price="course.original_price"
+            :discount_price="course.discounted_price"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -57,13 +66,21 @@
 
 <script lang="ts" setup>
 import type { ApiResponse } from "~/types/api";
-import type { Course } from "~/types/course";
+import type { Roadmap } from "~/types/roadmap";
 import { useLandingPageStore } from "#imports";
-import Index from "~/pages/index.vue";
+import type { Courses } from "~/types/courses";
 
 const LandingPageStore = useLandingPageStore();
-const { data, error } = await useFetch<ApiResponse<Course[]>>(
-  "/api/get-roadmap-landingpage"
+const { data: dataRoadmap, error: errorRoadmap } = await useAsyncData<
+  ApiResponse<Roadmap[]>
+>("dataRoadmap", () =>
+  $fetch<ApiResponse<Roadmap[]>>("/api/get-roadmap-landingpage")
+);
+
+const { data: dataCourses, error: errorCourses } = await useAsyncData<
+  ApiResponse<Courses[]>
+>("dataCourses", () =>
+  $fetch<ApiResponse<Courses[]>>("/api/get-courses-landingpage")
 );
 
 const roadmapSelectionActive = computed(() => LandingPageStore.selectCourses);
@@ -71,11 +88,13 @@ const setRoadmap = (roadmap: any) => {
   LandingPageStore.setSelectCourses(roadmap);
 };
 
-const courses = computed(() => data.value?.data ?? []);
+const watchCourses = computed(() => dataCourses.value?.data ?? []);
+const watchRoadmap = computed(() => dataRoadmap.value?.data ?? []);
 const isActiveRoadmap = (roadmap: any) => {
   return roadmap == roadmapSelectionActive.value ? true : false;
 };
-const roadmaps = courses.value;
+const roadmaps = watchRoadmap.value;
+const courses = watchCourses.value;
 </script>
 
 <style scoped>
