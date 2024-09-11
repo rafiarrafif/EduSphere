@@ -1,5 +1,6 @@
 <template>
   <div class="relative">
+    <div class="absolute z-50 top-[-10px] w-full bg-black h-3">okoko</div>
     <div class="h-32 w-60 overflow-hidden rounded">
       <img
         src="~/assets/img/courses/vue.jpg"
@@ -31,12 +32,16 @@
         </div>
         <span class="text-xs">(19830)</span>
       </div>
-      <div class="flex mt-1 gap-2 text-base">
-        <h1 class="font-bold">Rp192,000</h1>
-        <h1 class="line-through text-darkGray-900">Rp912,000</h1>
+      <div class="flex mt-1 gap-2 text-base" v-if="props.discount_price">
+        <h1 class="font-bold">Rp{{ formatPrice(props.discount_price) }}</h1>
+        <h1 class="line-through text-darkGray-900">
+          Rp{{ formatPrice(props.price) }}
+        </h1>
+      </div>
+      <div class="flex mt-1 gap-2 text-base" v-else>
+        <h1 class="font-bold">Rp{{ formatPrice(props.price) }}</h1>
       </div>
     </div>
-    <!-- <div class="absolute top-[-120px] w-96 bg-black h-3"></div> -->
   </div>
 </template>
 
@@ -58,5 +63,9 @@ function formatMentor(input: string): string {
     .split("_")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(" ");
+}
+
+function formatPrice(input: number): string {
+  return input.toLocaleString("en-US");
 }
 </script>

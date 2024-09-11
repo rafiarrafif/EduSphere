@@ -1,5 +1,6 @@
 [
   {
+    "id": "10001",
     "title": "VueJS Full Class - Vue Beginner to Master",
     "description": "Learn how to build modern, scalable, and reactive web applications with Vue.js. This course takes you from the basics of Vue to advanced techniques, empowering you to create dynamic user experiences effortlessly.",
     "benefits": [
@@ -9,106 +10,221 @@
     ],
     "image": "vue.jpg",
     "mentor": "david_abhi",
+    "level": "Intermediate",
+    "learn_hours": "18",
     "score": 4.6,
     "review": 2182183,
     "original_price": 439000,
     "discounted_price": 363300,
-    "categories": "web-development"
+    "categories": "1"
   },
   {
-    "title": "Mastering CSS - From Basics to Advanced",
-    "description": "Transform your web design skills with in-depth CSS training. This course covers everything from basic styling to advanced layouts and animations, helping you create visually stunning and responsive designs.",
+    "id": "10002",
+    "title": "ReactJS Essentials - Build Interactive UIs",
+    "description": "Dive into ReactJS and learn to build interactive and dynamic user interfaces. This course covers the core concepts of React, including hooks, state management, and routing.",
     "benefits": [
-      "CSS Fundamentals: Learn the core principles of CSS and its best practices.",
-      "Advanced Layouts: Create complex layouts with Flexbox and CSS Grid.",
-      "Animations and Transitions: Add dynamic effects to enhance user interaction."
+      "React Basics: Understand components, props, and state management.",
+      "Hooks and Context API: Use React hooks and the Context API for managing state and effects.",
+      "Routing and SPA: Implement routing with React Router for Single Page Applications."
+    ],
+    "image": "react.jpg",
+    "mentor": "sara_jones",
+    "level": "Intermediate",
+    "learn_hours": "20",
+    "score": 4.7,
+    "review": 1623456,
+    "original_price": 459000,
+    "discounted_price": 388000,
+    "categories": "1"
+  },
+  {
+    "id": "10003",
+    "title": "Advanced JavaScript - Master Modern Techniques",
+    "description": "Enhance your JavaScript skills with this advanced course. Explore modern JavaScript features, asynchronous programming, and advanced patterns for building robust web applications.",
+    "benefits": [
+      "Modern JS Features: Learn ES6+ features, including async/await and destructuring.",
+      "Advanced Patterns: Master design patterns and best practices for scalable applications.",
+      "Asynchronous Programming: Understand Promises, async/await, and event-driven programming."
+    ],
+    "image": "javascript.jpg",
+    "mentor": "john_smith",
+    "level": "Advanced",
+    "learn_hours": "25",
+    "score": 4.8,
+    "review": 2893045,
+    "original_price": 499000,
+    "discounted_price": 429000,
+    "categories": "1"
+  },
+  {
+    "id": "10004",
+    "title": "Mastering Node.js - Building Scalable Applications",
+    "description": "Explore the power of Node.js for building scalable server-side applications. This course covers Node.js fundamentals, REST APIs, and integration with databases.",
+    "benefits": [
+      "Node.js Basics: Understand core concepts and modules of Node.js.",
+      "REST API Development: Build and manage RESTful APIs using Express.",
+      "Database Integration: Connect Node.js applications with MongoDB and SQL databases."
+    ],
+    "image": "nodejs.jpg",
+    "mentor": "jane_doe",
+    "level": "Intermediate",
+    "learn_hours": "22",
+    "score": 4.5,
+    "review": 1746298,
+    "original_price": 469000,
+    "discounted_price": 399000,
+    "categories": "1"
+  },
+  {
+    "id": "10005",
+    "title": "CSS Mastery - Responsive and Modern Design",
+    "description": "Transform your CSS skills with this comprehensive course on responsive and modern design techniques. Learn to create visually appealing and responsive layouts using the latest CSS features.",
+    "benefits": [
+      "Responsive Design: Implement responsive design techniques with Flexbox and Grid.",
+      "Modern CSS Features: Use CSS variables, custom properties, and animations.",
+      "Design Principles: Apply best practices for visual design and user experience."
     ],
     "image": "css.jpg",
-    "mentor": "susan_lee",
-    "score": 4.8,
-    "review": 1478523,
-    "original_price": 359000,
-    "discounted_price": 305300,
-    "categories": "web-development"
-  },
-  {
-    "title": "JavaScript Essentials for Web Design",
-    "description": "Dive into JavaScript and discover how to use it to enhance web design. This course covers everything from basic scripting to advanced techniques for interactive and responsive web designs.",
-    "benefits": [
-      "JavaScript Basics: Understand the fundamentals of JavaScript and how it integrates with HTML and CSS.",
-      "DOM Manipulation: Learn to create dynamic and interactive web pages.",
-      "Event Handling: Master event-driven programming to create responsive user interfaces."
-    ],
-    "image": "js.jpg",
-    "mentor": "michael_johnson",
+    "mentor": "amanda_lee",
+    "level": "Beginner to Intermediate",
+    "learn_hours": "17",
     "score": 4.7,
-    "review": 1987654,
-    "original_price": 419000,
-    "discounted_price": 355200,
-    "categories": "web-development"
+    "review": 1534027,
+    "original_price": 429000,
+    "discounted_price": 359000,
+    "categories": "1"
   },
   {
-    "title": "Responsive Web Design with Bootstrap",
-    "description": "Learn how to build mobile-first, responsive websites using Bootstrap. This course covers the fundamentals of Bootstrap and how to use its components to create attractive and functional web designs.",
+    "id": "10006",
+    "title": "Web Design with UX/UI Principles",
+    "description": "Learn the principles of UX/UI design to create user-centered web designs. This course covers essential concepts in user experience and interface design for creating engaging websites.",
     "benefits": [
-      "Bootstrap Basics: Get started with the core Bootstrap framework.",
-      "Responsive Design: Create layouts that work on any device or screen size.",
-      "Customizing Bootstrap: Tailor Bootstrap components to fit your unique design needs."
-    ],
-    "image": "bootstrap.jpg",
-    "mentor": "jessica_taylor",
-    "score": 4.5,
-    "review": 2345678,
-    "original_price": 389000,
-    "discounted_price": 330300,
-    "categories": "web-development"
-  },
-  {
-    "title": "UX/UI Design Principles for Beginners",
-    "description": "Explore the essentials of UX/UI design and learn how to create user-friendly interfaces. This course provides a foundation in design principles, user research, and prototyping techniques to improve user experience.",
-    "benefits": [
-      "UX Fundamentals: Learn the basics of user experience design and research.",
-      "UI Design Principles: Discover how to create visually appealing and intuitive interfaces.",
-      "Prototyping and Testing: Develop and test prototypes to validate your design ideas."
+      "UX Design: Understand user experience principles and research methods.",
+      "UI Design: Master interface design techniques, including wireframing and prototyping.",
+      "Design Tools: Use popular design tools for creating mockups and user flows."
     ],
     "image": "ux_ui.jpg",
-    "mentor": "emily_smith",
-    "score": 4.9,
-    "review": 1098765,
-    "original_price": 449000,
-    "discounted_price": 382300,
-    "categories": "web-development"
-  },
-  {
-    "title": "Design Systems and Components",
-    "description": "Build consistent and scalable design systems with this comprehensive course. Learn how to create reusable components and establish a design language that ensures a cohesive user experience across your projects.",
-    "benefits": [
-      "Design System Basics: Understand the principles of design systems and their benefits.",
-      "Creating Components: Develop reusable UI components for consistency and efficiency.",
-      "Implementation Strategies: Learn how to integrate your design system into real-world projects."
-    ],
-    "image": "design_systems.jpg",
-    "mentor": "alex_brown",
+    "mentor": "claire_brown",
+    "level": "Intermediate",
+    "learn_hours": "21",
     "score": 4.6,
-    "review": 1234567,
-    "original_price": 429000,
-    "discounted_price": 366900,
-    "categories": "web-development"
+    "review": 1934857,
+    "original_price": 459000,
+    "discounted_price": 389000,
+    "categories": "1"
   },
   {
-    "title": "Introduction to Web Design with HTML & CSS",
-    "description": "Kickstart your journey into web design with this beginner-friendly course. Learn how to create and style web pages using HTML and CSS, and gain the skills needed to design beautiful and functional websites.",
+    "id": "20001",
+    "title": "Introduction to Machine Learning with Python",
+    "description": "Discover the foundations of machine learning using Python. This course covers essential techniques and algorithms to start building predictive models and analyzing data.",
     "benefits": [
-      "HTML Basics: Master the structure of web pages with HTML.",
-      "CSS Styling: Learn how to apply styles and layout techniques with CSS.",
-      "Responsive Design: Ensure your websites look great on any device or screen size."
+      "Python Basics for ML: Learn Python programming with a focus on machine learning libraries.",
+      "Supervised Learning: Understand classification and regression algorithms.",
+      "Model Evaluation: Use metrics to assess model performance and make improvements."
     ],
-    "image": "html_css.jpg",
-    "mentor": "olivia_jones",
-    "score": 4.4,
-    "review": 1567890,
-    "original_price": 349000,
-    "discounted_price": 297300,
-    "categories": "web-development"
+    "image": "python_ml.jpg",
+    "mentor": "lisa_brown",
+    "level": "Beginner",
+    "learn_hours": "20",
+    "score": 4.7,
+    "review": 342109,
+    "original_price": 469000,
+    "discounted_price": 399000,
+    "categories": "2"
+  },
+  {
+    "id": "20002",
+    "title": "Deep Learning with TensorFlow",
+    "description": "Dive into deep learning with TensorFlow. This course provides hands-on experience with building and training deep neural networks for complex tasks like image and speech recognition.",
+    "benefits": [
+      "TensorFlow Basics: Get started with TensorFlow and its core functionalities.",
+      "Neural Networks: Build and train deep neural networks for various applications.",
+      "Model Deployment: Learn how to deploy TensorFlow models into production environments."
+    ],
+    "image": "tensorflow.jpg",
+    "mentor": "george_kim",
+    "level": "Intermediate",
+    "learn_hours": "30",
+    "score": 4.8,
+    "review": 278412,
+    "original_price": 599000,
+    "discounted_price": 499000,
+    "categories": "2"
+  },
+  {
+    "id": "20003",
+    "title": "Machine Learning with R: A Comprehensive Guide",
+    "description": "Explore machine learning techniques using R. This course covers a range of algorithms and provides practical exercises to apply machine learning methods to real-world data.",
+    "benefits": [
+      "R Programming for ML: Learn the R language with a focus on machine learning applications.",
+      "Unsupervised Learning: Understand clustering and dimensionality reduction techniques.",
+      "Data Visualization: Use R to visualize and interpret machine learning results."
+    ],
+    "image": "r_ml.jpg",
+    "mentor": "nina_clark",
+    "level": "Advanced",
+    "learn_hours": "25",
+    "score": 4.6,
+    "review": 198765,
+    "original_price": 549000,
+    "discounted_price": 469000,
+    "categories": "2"
+  },
+  {
+    "id": "20004",
+    "title": "Reinforcement Learning with Python",
+    "description": "Master reinforcement learning concepts and algorithms using Python. This course teaches you how to build intelligent agents that learn to make decisions through trial and error.",
+    "benefits": [
+      "Reinforcement Learning Basics: Learn the theory behind reinforcement learning.",
+      "Algorithm Implementation: Implement popular algorithms like Q-learning and policy gradients.",
+      "Real-World Applications: Apply reinforcement learning techniques to practical problems."
+    ],
+    "image": "reinforcement_learning.jpg",
+    "mentor": "oliver_jones",
+    "level": "Intermediate",
+    "learn_hours": "28",
+    "score": 4.9,
+    "review": 314286,
+    "original_price": 579000,
+    "discounted_price": 489000,
+    "categories": "2"
+  },
+  {
+    "id": "20005",
+    "title": "Natural Language Processing with Deep Learning",
+    "description": "Explore natural language processing (NLP) with deep learning techniques. This course covers state-of-the-art methods for text analysis, sentiment analysis, and language generation.",
+    "benefits": [
+      "NLP Fundamentals: Learn core NLP techniques and applications.",
+      "Deep Learning Models: Build and train models for text classification and generation.",
+      "Transformers and BERT: Use advanced models like BERT for improved NLP performance."
+    ],
+    "image": "nlp_deep_learning.jpg",
+    "mentor": "michael_anderson",
+    "level": "Advanced",
+    "learn_hours": "32",
+    "score": 4.8,
+    "review": 222345,
+    "original_price": 629000,
+    "discounted_price": 529000,
+    "categories": "2"
+  },
+  {
+    "id": "20006",
+    "title": "AI for Everyone: Introduction to Artificial Intelligence",
+    "description": "A beginner-friendly course introducing the concepts and applications of artificial intelligence (AI). Understand the impact of AI on various industries and explore basic AI techniques.",
+    "benefits": [
+      "AI Fundamentals: Learn the core concepts of AI and machine learning.",
+      "Applications of AI: Explore how AI is used in different sectors like healthcare, finance, and more.",
+      "Ethics and Future of AI: Discuss the ethical considerations and future trends in AI."
+    ],
+    "image": "ai_for_everyone.jpg",
+    "mentor": "sophie_wilson",
+    "level": "Beginner",
+    "learn_hours": "15",
+    "score": 4.5,
+    "review": 154320,
+    "original_price": 299000,
+    "discounted_price": 249000,
+    "categories": "2"
   }
 ]

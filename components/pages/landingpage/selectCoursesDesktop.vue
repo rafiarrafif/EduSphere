@@ -11,10 +11,10 @@
         :style="`animation-delay: ${index * 0.15}s`"
       >
         <button
-          @click="setRoadmap(roadmap.slug)"
+          @click="setRoadmap(roadmap.id)"
           class="font-semibold px-1 py-0.5 h-full text-primary-900 transition-all"
           :class="{
-            'gradient-button ': isActiveRoadmap(roadmap.slug),
+            'gradient-button ': isActiveRoadmap(roadmap.id),
           }"
         >
           {{ roadmap.name }}
@@ -22,7 +22,7 @@
         <span
           class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary-500 rounded-full transition-all"
           :class="{
-            'opacity-0': !isActiveRoadmap(roadmap.slug),
+            'opacity-0': !isActiveRoadmap(roadmap.id),
           }"
         ></span>
       </div>
@@ -44,7 +44,7 @@
           <button
             class="w-fit mt-4 text-sm border py-2 px-6 rounded-lg border-primary-950 font-semibold transition-all hover:bg-darkGray-200"
           >
-            Explore Web Design
+            Explore {{ activeRoadmap?.name }}
           </button>
         </nuxt-link>
       </div>
@@ -62,7 +62,7 @@
         </button>
         <div
           ref="selectRoadmapScroll"
-          class="flex gap-4 mx-2 pb-0.5 mt-8 w-full hide-scrollbar overflow-x-auto"
+          class="flex gap-4 mx-2 pb-0.5 mt-8 w-full hide-scrollbar overflow-x-scroll overflow-y-visible"
         >
           <div v-for="(course, index) in courses" :key="index">
             <CardsSelectCoursesLandingpage
@@ -113,18 +113,20 @@ const { data: dataCourses, error: errorCourses } = await useAsyncData<
   $fetch<ApiResponse<Courses[]>>("/api/get-courses-landingpage")
 );
 
-const roadmapSelectionActive = computed(() => LandingPageStore.selectCourses);
-const setRoadmap = (roadmap: any) => {
+const roadmapSelectionActive = computed(() => LandingPageStore.roadmapActive);
+const setRoadmap = (roadmap: number) => {
   LandingPageStore.setSelectCourses(roadmap);
 };
 
 const watchCourses = computed(() => dataCourses.value?.data ?? []);
 const watchRoadmap = computed(() => dataRoadmap.value?.data ?? []);
-const isActiveRoadmap = (roadmap: any) => {
+const isActiveRoadmap = (roadmap: number) => {
   return roadmap == roadmapSelectionActive.value ? true : false;
 };
 const roadmaps = watchRoadmap.value;
-const courses = watchCourses.value;
+const courses = watchCourses.value.filter(
+  (course) => course.categories == roadmapSelectionActive.value
+);
 
 const selectRoadmapScroll = ref<HTMLElement | null>(null);
 const showLeftButton = ref(false);
@@ -152,7 +154,7 @@ const updateScrollButtons = () => {
     showRightButton.value =
       selectRoadmapScroll.value.scrollLeft +
         selectRoadmapScroll.value.clientWidth <
-      selectRoadmapScroll.value.scrollWidth;
+      selectRoadmapScroll.value.scrollWidth + -1;
   }
 };
 
@@ -161,6 +163,13 @@ onMounted(() => {
     selectRoadmapScroll.value.addEventListener("scroll", updateScrollButtons);
     updateScrollButtons();
   }
+});
+
+const activeRoadmap = computed(() => {
+  const findActiveRoadmap = watchRoadmap.value.find(
+    (roadmap) => roadmap.id == roadmapSelectionActive.value
+  );
+  return findActiveRoadmap;
 });
 </script>
 

@@ -4,7 +4,7 @@ interface landingPageStore {
   searchIconState: boolean;
   searchFocus: HTMLInputElement | null;
   isOnEdgeTop: boolean;
-  selectCourses: string;
+  roadmapActive: number;
   hoveredCourseCard: number | null;
 }
 
@@ -13,7 +13,7 @@ export const useLandingPageStore = defineStore("landingPageStore", {
     searchIconState: false,
     searchFocus: null,
     isOnEdgeTop: true,
-    selectCourses: "web-development",
+    roadmapActive: 1,
     hoveredCourseCard: null,
   }),
   actions: {
@@ -29,8 +29,8 @@ export const useLandingPageStore = defineStore("landingPageStore", {
     setIsOnEdgeTop(isOnEdgeTop: boolean) {
       this.isOnEdgeTop = isOnEdgeTop;
     },
-    setSelectCourses(courses: string) {
-      this.selectCourses = courses;
+    setSelectCourses(courses: number) {
+      this.roadmapActive = courses;
     },
     setHoveredCard(cardID: number) {
       this.hoveredCourseCard = cardID;
