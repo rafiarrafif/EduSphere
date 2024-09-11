@@ -30,13 +30,10 @@
     <div class="w-full border border-primary-950 rounded-lg py-6 px-8">
       <div class="flex flex-col gap-1">
         <h1 class="text-xl text-black font-bold">
-          Build Websites With Web Development
+          {{ $t("landingPage.roadmap.title.web-development") }}
         </h1>
         <p class="h-fit text-sm" style="width: 800px">
-          Master the essential skills to create dynamic and responsive websites
-          from scratch. From HTML and CSS to advanced JavaScript frameworks, our
-          courses equip you with the tools to become a full-stack developer and
-          bring your ideas to life.
+          {{ $t("landingPage.roadmap.description.web-development") }}
         </p>
       </div>
       <div>
@@ -124,8 +121,10 @@ const isActiveRoadmap = (roadmap: number) => {
   return roadmap == roadmapSelectionActive.value ? true : false;
 };
 const roadmaps = watchRoadmap.value;
-const courses = watchCourses.value.filter(
-  (course) => course.categories == roadmapSelectionActive.value
+const courses = computed(() =>
+  watchCourses.value.filter(
+    (course) => course.categories == roadmapSelectionActive.value
+  )
 );
 
 const selectRoadmapScroll = ref<HTMLElement | null>(null);

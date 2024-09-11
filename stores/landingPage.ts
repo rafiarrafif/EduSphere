@@ -6,6 +6,7 @@ interface landingPageStore {
   isOnEdgeTop: boolean;
   roadmapActive: number;
   hoveredCourseCard: number | null;
+  languagePopupState: boolean;
 }
 
 export const useLandingPageStore = defineStore("landingPageStore", {
@@ -15,6 +16,7 @@ export const useLandingPageStore = defineStore("landingPageStore", {
     isOnEdgeTop: true,
     roadmapActive: 1,
     hoveredCourseCard: null,
+    languagePopupState: false,
   }),
   actions: {
     setFocusSearch(el: HTMLInputElement) {
@@ -34,6 +36,9 @@ export const useLandingPageStore = defineStore("landingPageStore", {
     },
     setHoveredCard(cardID: number) {
       this.hoveredCourseCard = cardID;
+    },
+    toogleLanguagePopupState() {
+      this.languagePopupState = !this.languagePopupState;
     },
   },
 });

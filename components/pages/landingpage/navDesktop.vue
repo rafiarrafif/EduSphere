@@ -54,7 +54,11 @@
         </nuxt-link>
       </div>
       <div
-        class="w-9 h-9 flex justify-center items-center rounded-lg hover:bg-darkGray-200 transition-all cursor-pointer"
+        @click="showLanguagesPopup"
+        class="w-9 h-9 safe-areas flex justify-center items-center rounded-lg hover:bg-darkGray-200 transition-all cursor-pointer"
+        :class="{
+          'bg-darkGray-200': landingPageStore.languagePopupState,
+        }"
       >
         <Icon name="solar:earth-linear" size="1.2em" class="text-black" />
       </div>
@@ -69,6 +73,10 @@ const landingPageStore = useLandingPageStore();
 const isSearchActive = computed(() => landingPageStore.searchIconState);
 const isOnTop = computed(() => landingPageStore.isOnEdgeTop);
 const searchField = ref<HTMLInputElement | null>(null);
+
+const showLanguagesPopup = () => {
+  landingPageStore.toogleLanguagePopupState();
+};
 const switchSearchState = () => {
   landingPageStore.toggleSearchIcon();
 };

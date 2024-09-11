@@ -226,5 +226,157 @@
     "original_price": 299000,
     "discounted_price": 249000,
     "categories": "2"
+  },
+  {
+    "id": "30001",
+    "title": "Introduction to Game Design",
+    "description": "Learn the fundamental principles of game design, including game mechanics, level design, and player psychology. Perfect for aspiring game designers who want to start their journey.",
+    "benefits": [
+      "Game Mechanics: Understand core mechanics and how they drive gameplay.",
+      "Level Design: Create engaging levels that challenge and entertain players.",
+      "Player Psychology: Learn how to design games that capture player interest."
+    ],
+    "image": "intro_game_design.jpg",
+    "mentor": "mike_johnson",
+    "level": "Beginner",
+    "learn_hours": "12",
+    "score": 4.5,
+    "review": 87234,
+    "original_price": 399000,
+    "discounted_price": 319000,
+    "categories": "3"
+  },
+  {
+    "id": "30002",
+    "title": "Unity Game Development - Beginner to Pro",
+    "description": "Master the Unity game engine and learn to build interactive 2D and 3D games. This course takes you through the entire game development process from concept to release.",
+    "benefits": [
+      "Unity Basics: Get familiar with the Unity interface and build your first game.",
+      "2D and 3D Game Development: Learn to create both 2D and 3D games using Unity.",
+      "Publishing: Understand how to publish games to different platforms, including mobile and PC."
+    ],
+    "image": "unity_game_dev.jpg",
+    "mentor": "sarah_kim",
+    "level": "Intermediate",
+    "learn_hours": "25",
+    "score": 4.7,
+    "review": 195674,
+    "original_price": 599000,
+    "discounted_price": 499000,
+    "categories": "3"
+  },
+  {
+    "id": "30003",
+    "title": "Level Design Masterclass",
+    "description": "Specialize in level design and create immersive worlds that captivate players. This course covers the principles of environment design, pacing, and interactive storytelling.",
+    "benefits": [
+      "Environment Design: Learn how to build compelling and immersive game environments.",
+      "Interactive Storytelling: Integrate story elements seamlessly into level design.",
+      "Pacing: Design levels with balanced difficulty and progression."
+    ],
+    "image": "level_design.jpg",
+    "mentor": "john_smith",
+    "level": "Advanced",
+    "learn_hours": "22",
+    "score": 4.8,
+    "review": 103456,
+    "original_price": 499000,
+    "discounted_price": 429000,
+    "categories": "3"
+  },
+  {
+    "id": "30004",
+    "title": "Game Art for Beginners",
+    "description": "Dive into the world of game art and learn the basics of creating stunning visuals for your games. This course focuses on 2D and 3D art techniques, textures, and asset creation.",
+    "benefits": [
+      "2D and 3D Art Basics: Master the core principles of both 2D and 3D art for games.",
+      "Textures and Materials: Create realistic textures and materials for your game assets.",
+      "Asset Creation: Learn how to design and create assets for different game genres."
+    ],
+    "image": "game_art.jpg",
+    "mentor": "emma_wilson",
+    "level": "Beginner",
+    "learn_hours": "18",
+    "score": 4.6,
+    "review": 64321,
+    "original_price": 449000,
+    "discounted_price": 379000,
+    "categories": "3"
+  },
+  {
+    "id": "30005",
+    "title": "Sound Design for Video Games",
+    "description": "Master the art of sound design and learn how to create immersive audio experiences for video games. This course covers everything from sound effects to background music.",
+    "benefits": [
+      "Sound Effects: Learn how to create and implement sound effects for various in-game actions.",
+      "Background Music: Understand how to compose music that enhances the player experience.",
+      "Audio Integration: Use game engines to integrate audio into gameplay effectively."
+    ],
+    "image": "sound_design.jpg",
+    "mentor": "luke_williams",
+    "level": "Intermediate",
+    "learn_hours": "20",
+    "score": 4.7,
+    "review": 78654,
+    "original_price": 529000,
+    "discounted_price": 459000,
+    "categories": "3"
+  },
+  {
+    "id": "30006",
+    "title": "3D Modeling for Game Development",
+    "description": "Learn how to create detailed 3D models for video games. This course teaches the fundamentals of 3D modeling, texturing, and rendering for use in modern game engines.",
+    "benefits": [
+      "3D Modeling Basics: Understand the principles of creating 3D models for games.",
+      "Texturing and Rendering: Learn how to texture and render your 3D models for realistic effects.",
+      "Game Engine Integration: Import and optimize 3D models for different game engines."
+    ],
+    "image": "3d_modeling.jpg",
+    "mentor": "chris_baker",
+    "level": "Advanced",
+    "learn_hours": "28",
+    "score": 4.8,
+    "review": 93485,
+    "original_price": 579000,
+    "discounted_price": 499000,
+    "categories": "3"
+  },
+  {
+    "id": "30007",
+    "title": "Game Narrative Design",
+    "description": "Craft compelling stories and characters for video games. This course focuses on game narrative, character development, and branching storylines to engage players.",
+    "benefits": [
+      "Story Development: Learn how to create engaging narratives and plot structures.",
+      "Character Creation: Develop memorable characters with depth and unique personalities.",
+      "Branching Storylines: Implement choices that lead to multiple story outcomes."
+    ],
+    "image": "game_narrative.jpg",
+    "mentor": "olivia_king",
+    "level": "Intermediate",
+    "learn_hours": "24",
+    "score": 4.7,
+    "review": 66542,
+    "original_price": 499000,
+    "discounted_price": 429000,
+    "categories": "3"
+  },
+  {
+    "id": "30008",
+    "title": "AI Programming for Game Development",
+    "description": "Master the basics of AI programming for games. Learn to build intelligent game agents that react to player actions and create challenging gameplay experiences.",
+    "benefits": [
+      "AI Fundamentals: Understand the core concepts of AI in games.",
+      "Behavior Trees: Learn how to design behavior trees for complex decision-making.",
+      "Pathfinding and NPCs: Implement pathfinding algorithms and create intelligent NPCs."
+    ],
+    "image": "ai_game_dev.jpg",
+    "mentor": "henry_ross",
+    "level": "Advanced",
+    "learn_hours": "26",
+    "score": 4.9,
+    "review": 84235,
+    "original_price": 579000,
+    "discounted_price": 499000,
+    "categories": "3"
   }
 ]

@@ -1,10 +1,17 @@
 <template>
   <div>
-    <div class="w-full h-fit fixed z-50">
+    <div v-if="landingPageStore.languagePopupState">
+      <PagesLandingpageSelectLanguageDesktop />
+    </div>
+    <div v-if="isDeviceDetected" class="w-full h-fit fixed z-[800]">
       <PagesLandingpageNavDesktop v-if="isDesktop" />
       <PagesLandingpageNavMobile v-else />
     </div>
-    <div style="height: 12232px" class="bg-primary-50">
+    <div
+      style="height: 12232px"
+      :class="{ 'overflow-hidden': landingPageStore.languagePopupState }"
+      class="bg-primary-50"
+    >
       <slot />
     </div>
   </div>
@@ -12,12 +19,25 @@
 
 <script lang="ts" setup>
 import { useDeviceDetection } from "~/composables/useDeviceDetection";
+import { useLandingPageStore } from "#imports";
 import { useDeviceType } from "#imports";
 useDeviceDetection();
+
+const isDeviceDetected = ref(false);
+const landingPageStore = useLandingPageStore();
 const deviceType = useDeviceType();
 const isDesktop = computed(() => {
   return (
     deviceType.deviceType === "laptop" || deviceType.deviceType === "desktop"
   );
 });
+
+watch(
+  () => deviceType.deviceType,
+  (newDeviceType) => {
+    if (newDeviceType) {
+      isDeviceDetected.value = true;
+    }
+  }
+);
 </script>
