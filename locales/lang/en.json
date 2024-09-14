@@ -1,5 +1,22 @@
 {
   "welcome": "Welcome",
+  "SignUp": "Sign Up",
+  "LogIn": "Log In",
+  "tryDemo": "Try Demo",
+  "explore": "Explore",
+  "back": "Back",
+  "landingPage.navbar.desktop.search": "What do you want to learn today?",
+  "landingPage.hero.title.dontJust": "Don't Just",
+  "landingPage.hero.title.learn": "Learn",
+  "landingPage.hero.title.master": "Master",
+  "landingPage.hero.title.it": "It!",
+  "landingPage.sponsors.title": "Collaborating with Global Innovators, Trusted by Leading Companies Arround the World",
+  "landingPage.hero.description.first": "Unlock the power of knowledge with expert-led courses designed to help you excel.",
+  "landingPage.hero.description.second": "Whether you're a beginner or advancing your skills, take control and master what truly matters.",
+  "landingPage.roadmap.title": "Find the Right Path for Your Learning Journey",
+  "landingPage.roadmap.description": "Discover courses that ignite your passion and propel your career.",
   "landingPage.roadmap.title.web-development": "Build Websites With Web Development",
-  "landingPage.roadmap.description.web-development": "Master the essential skills to create dynamic and responsive websites from scratch. From HTML and CSS to advanced JavaScript frameworks, our courses equip you with the tools to become a full-stack developer and bring your ideas to life."
+  "landingPage.roadmap.description.web-development": "Master the essential skills to create dynamic and responsive websites from scratch. From HTML and CSS to advanced JavaScript frameworks, our courses equip you with the tools to become a full-stack developer and bring your ideas to life.",
+  "landingPage.roadmap.title.mechine-learning": "Transform Your Career with Machine Learning",
+  "landingPage.roadmap.description.mechine-learning": "Dive into the world of machine learning and unlock limitless opportunities. Our hands-on courses will teach you how to build predictive models, automate processes, and drive innovation in any industry. Become an expert in AI technologies and take your career to the next level with skills that are in high demand."
 }

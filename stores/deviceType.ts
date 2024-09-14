@@ -1,12 +1,12 @@
 import { defineStore } from "#imports";
 
 interface deviceType {
-  deviceType: string;
+  deviceType: string | null;
 }
 
 export const useDeviceType = defineStore("deviceType", {
   state: (): deviceType => ({
-    deviceType: "tablet",
+    deviceType: null,
   }),
   actions: {
     setDeviceType(deviceType: string) {

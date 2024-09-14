@@ -5,7 +5,7 @@
     </div>
     <div v-if="isDeviceDetected" class="w-full h-fit fixed z-[800]">
       <PagesLandingpageNavDesktop v-if="isDesktop" />
-      <PagesLandingpageNavMobile v-else />
+      <PagesLandingpageNavMobile v-if="!isDesktop" />
     </div>
     <div
       style="height: 12232px"

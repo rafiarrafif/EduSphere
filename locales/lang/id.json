@@ -1,5 +1,20 @@
 {
   "welcome": "Selamat datang",
+  "signUp": "Daftar",
+  "logIn": "Masuk",
+  "tryDemo": "Coba Demo",
+  "explore": "Jelajahi",
+  "back": "Kembali",
+  "landingPage.navbar.desktop.search": "Apa yang ingin kamu pelajari hari ini?",
+  "landingPage.hero.title.dontJust": "Jangan Hanya",
+  "landingPage.hero.title.learn": "Belajar",
+  "landingPage.hero.title.master": "Ahli",
+  "landingPage.hero.title.it": "kan!",
+  "landingPage.sponsors.title": "Berkolaborasi dengan Inovator Global, Dipercaya oleh Perusahaan Terkemuka di Seluruh Dunia",
+  "landingPage.hero.description.first": "Manfaatkan potensi pengetahuan dengan kursus yang dipandu oleh para ahli, dirancang untuk membantu kamu sukses.",
+  "landingPage.hero.description.second": "Baik kamu pemula atau ingin meningkatkan keterampilan, ambil kendali dan kuasai hal-hal yang benar-benar penting.",
+  "landingPage.roadmap.title": "Temukan Jalur yang Tepat untuk Perjalanan Belajarmu",
+  "landingPage.roadmap.description": "Temukan kursus yang membangkitkan semangatmu dan mendorong karirmu.",
   "landingPage.roadmap.title.web-development": "Bangun Website dengan Pengembangan Web",
   "landingPage.roadmap.description.web-development": "Kuasi keterampilan penting untuk membuat situs web dinamis dan responsif dari nol. Mulai dari HTML dan CSS hingga framework JavaScript tingkat lanjut, kursus kami membekali Anda dengan alat untuk menjadi pengembang full-stack dan mewujudkan ide-ide Anda."
 }

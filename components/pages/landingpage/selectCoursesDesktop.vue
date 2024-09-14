@@ -30,10 +30,10 @@
     <div class="w-full border border-primary-950 rounded-lg py-6 px-8">
       <div class="flex flex-col gap-1">
         <h1 class="text-xl text-black font-bold">
-          {{ $t("landingPage.roadmap.title.web-development") }}
+          {{ $t("landingPage.roadmap.title." + activeRoadmap?.slug) }}
         </h1>
         <p class="h-fit text-sm" style="width: 800px">
-          {{ $t("landingPage.roadmap.description.web-development") }}
+          {{ $t("landingPage.roadmap.description." + activeRoadmap?.slug) }}
         </p>
       </div>
       <div>
@@ -41,7 +41,7 @@
           <button
             class="w-fit mt-4 text-sm border py-2 px-6 rounded-lg border-primary-950 font-semibold transition-all hover:bg-darkGray-200"
           >
-            Explore {{ activeRoadmap?.name }}
+            {{ $t("explore") }} {{ activeRoadmap?.name }}
           </button>
         </nuxt-link>
       </div>
@@ -100,7 +100,7 @@ import type { Courses } from "~/types/courses";
 const LandingPageStore = useLandingPageStore();
 const { data: dataRoadmap, error: errorRoadmap } = await useAsyncData<
   ApiResponse<Roadmap[]>
->("dataRoadmfuncap", () =>
+>("dataRoadmap", () =>
   $fetch<ApiResponse<Roadmap[]>>("/api/get-roadmap-landingpage")
 );
 
@@ -120,7 +120,7 @@ const watchRoadmap = computed(() => dataRoadmap.value?.data ?? []);
 const isActiveRoadmap = (roadmap: number) => {
   return roadmap == roadmapSelectionActive.value ? true : false;
 };
-const roadmaps = watchRoadmap.value;
+const roadmaps = watchRoadmap;
 const courses = computed(() =>
   watchCourses.value.filter(
     (course) => course.categories == roadmapSelectionActive.value
@@ -153,7 +153,7 @@ const updateScrollButtons = () => {
     showRightButton.value =
       selectRoadmapScroll.value.scrollLeft +
         selectRoadmapScroll.value.clientWidth <
-      selectRoadmapScroll.value.scrollWidth + -1;
+      selectRoadmapScroll.value.scrollWidth + 0;
   }
 };
 
@@ -161,6 +161,7 @@ onMounted(() => {
   if (selectRoadmapScroll.value) {
     selectRoadmapScroll.value.addEventListener("scroll", updateScrollButtons);
     updateScrollButtons();
+    showRightButton.value = true;
   }
 });
 
@@ -170,6 +171,8 @@ const activeRoadmap = computed(() => {
   );
   return findActiveRoadmap;
 });
+
+// console.log(roadmaps);
 </script>
 
 <style scoped>

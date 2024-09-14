@@ -82,7 +82,9 @@
 <script lang="ts" setup>
 import { useI18n } from "#imports";
 import { useLandingPageStore } from "#imports";
+import { useLangPreference } from "~/stores/langPreference";
 const landingPageStore = useLandingPageStore();
+const langPreference = useLangPreference();
 const { locale } = useI18n();
 
 const closelangingPageStore = () => {
@@ -91,5 +93,6 @@ const closelangingPageStore = () => {
 
 const changeLang = (lang: string) => {
   locale.value = lang;
+  langPreference.setLocale(lang);
 };
 </script>

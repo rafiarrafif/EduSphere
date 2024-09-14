@@ -24,7 +24,7 @@
       />
       <input
         type="text"
-        placeholder="What do you want to learn today?"
+        :placeholder="t('landingPage.navbar.desktop.search')"
         class="py-3 focus:outline-none placeholder-darkGray-600 text-sm bg-transparent w-full"
         ref="searchField"
         @focus="switchSearchState"
@@ -42,14 +42,14 @@
           <button
             class="text-black bg-transparent text-sm py-3 px-5 rounded-lg font-semibold hover:bg-darkGray-200 transition-all"
           >
-            Log In
+            {{ $t("logIn") }}
           </button>
         </nuxt-link>
         <nuxt-link to="">
           <button
             class="bg-black text-white text-sm py-3 px-5 font-semibold rounded-lg hover:bg-darkGray-950 transition-all"
           >
-            Sign Up
+            {{ $t("signUp") }}
           </button>
         </nuxt-link>
       </div>
@@ -67,8 +67,10 @@
 </template>
 
 <script lang="ts" setup>
+import { useI18n } from "#imports";
 import { useLandingPageStore } from "~/stores/landingPage";
 
+const { t } = useI18n();
 const landingPageStore = useLandingPageStore();
 const isSearchActive = computed(() => landingPageStore.searchIconState);
 const isOnTop = computed(() => landingPageStore.isOnEdgeTop);

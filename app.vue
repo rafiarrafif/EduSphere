@@ -7,6 +7,12 @@
 </template>
 
 <script lang="ts" setup>
+import { useI18n } from "#imports";
+import { useLangPreference } from "./stores/langPreference";
+const { locale } = useI18n();
+const langPreference = useLangPreference();
+locale.value = langPreference.locale;
+
 const route = useRoute();
 const layout = ref<string>();
 if (route.path === "/") {

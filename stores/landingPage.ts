@@ -7,6 +7,8 @@ interface landingPageStore {
   roadmapActive: number;
   hoveredCourseCard: number | null;
   languagePopupState: boolean;
+  sidebarState: boolean;
+  sidebarComponent: string;
 }
 
 export const useLandingPageStore = defineStore("landingPageStore", {
@@ -17,6 +19,8 @@ export const useLandingPageStore = defineStore("landingPageStore", {
     roadmapActive: 1,
     hoveredCourseCard: null,
     languagePopupState: false,
+    sidebarState: false,
+    sidebarComponent: "mainComponent",
   }),
   actions: {
     setFocusSearch(el: HTMLInputElement) {
@@ -39,6 +43,12 @@ export const useLandingPageStore = defineStore("landingPageStore", {
     },
     toogleLanguagePopupState() {
       this.languagePopupState = !this.languagePopupState;
+    },
+    toggleSidebarState() {
+      this.sidebarState = !this.sidebarState;
+    },
+    setSidebarComponent(component: string) {
+      this.sidebarComponent = component;
     },
   },
 });

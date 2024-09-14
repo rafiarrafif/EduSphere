@@ -378,5 +378,309 @@
     "original_price": 579000,
     "discounted_price": 499000,
     "categories": "3"
+  },
+  {
+    "id": "40001",
+    "title": "Financial Accounting for Beginners",
+    "description": "Learn the basics of financial accounting, including recording transactions, preparing financial statements, and understanding the accounting cycle.",
+    "benefits": [
+      "Core Accounting Principles: Understand the basics of double-entry bookkeeping and financial reporting.",
+      "Financial Statements: Learn how to prepare balance sheets, income statements, and cash flow statements.",
+      "Accounting Cycle: Master the full accounting cycle from transaction recording to closing."
+    ],
+    "image": "financial_accounting.jpg",
+    "mentor": "amy_johnson",
+    "level": "Beginner",
+    "learn_hours": "15",
+    "score": 4.5,
+    "review": 12568,
+    "original_price": 299000,
+    "discounted_price": 249000,
+    "categories": "4"
+  },
+  {
+    "id": "40002",
+    "title": "Managerial Accounting Essentials",
+    "description": "Develop the skills to use accounting information for internal business decision-making, including budgeting, cost management, and performance evaluation.",
+    "benefits": [
+      "Cost Management: Learn how to control and reduce costs within a business.",
+      "Budgeting: Master the techniques for preparing and managing budgets effectively.",
+      "Performance Evaluation: Use financial data to assess and improve business performance."
+    ],
+    "image": "managerial_accounting.jpg",
+    "mentor": "michael_lee",
+    "level": "Intermediate",
+    "learn_hours": "18",
+    "score": 4.6,
+    "review": 14687,
+    "original_price": 399000,
+    "discounted_price": 329000,
+    "categories": "4"
+  },
+  {
+    "id": "40003",
+    "title": "Taxation for Accountants",
+    "description": "Understand the fundamentals of tax accounting, including individual and corporate tax returns, tax planning, and compliance with tax laws.",
+    "benefits": [
+      "Tax Compliance: Learn how to prepare and file tax returns for individuals and businesses.",
+      "Tax Planning: Understand strategies for minimizing tax liabilities.",
+      "Corporate Taxation: Explore the tax obligations of corporations and large entities."
+    ],
+    "image": "tax_accounting.jpg",
+    "mentor": "linda_martin",
+    "level": "Advanced",
+    "learn_hours": "22",
+    "score": 4.7,
+    "review": 18762,
+    "original_price": 499000,
+    "discounted_price": 429000,
+    "categories": "4"
+  },
+  {
+    "id": "40004",
+    "title": "Audit and Assurance Fundamentals",
+    "description": "Gain a solid foundation in audit and assurance services, focusing on risk management, internal controls, and audit procedures.",
+    "benefits": [
+      "Audit Procedures: Learn the standard audit procedures and practices.",
+      "Internal Controls: Understand the importance of internal controls in business operations.",
+      "Risk Management: Develop skills in identifying and mitigating financial risks."
+    ],
+    "image": "audit_assurance.jpg",
+    "mentor": "david_walker",
+    "level": "Intermediate",
+    "learn_hours": "20",
+    "score": 4.6,
+    "review": 13456,
+    "original_price": 429000,
+    "discounted_price": 359000,
+    "categories": "4"
+  },
+  {
+    "id": "40005",
+    "title": "Accounting Software Mastery: QuickBooks & Xero",
+    "description": "Master popular accounting software tools, including QuickBooks and Xero, to streamline financial management for businesses.",
+    "benefits": [
+      "QuickBooks Mastery: Learn how to manage business finances using QuickBooks.",
+      "Xero Expertise: Become proficient in Xero for cloud-based accounting.",
+      "Automating Financial Tasks: Discover how to automate invoices, payroll, and financial reporting."
+    ],
+    "image": "accounting_software.jpg",
+    "mentor": "susan_clark",
+    "level": "Advanced",
+    "learn_hours": "24",
+    "score": 4.8,
+    "review": 16532,
+    "original_price": 579000,
+    "discounted_price": 499000,
+    "categories": "4"
+  },
+  {
+    "id": "40006",
+    "title": "Forensic Accounting: Detecting Fraud",
+    "description": "Learn how to identify financial fraud and misconduct through forensic accounting techniques, focusing on detecting, preventing, and investigating fraud.",
+    "benefits": [
+      "Fraud Detection: Understand common types of financial fraud and how to spot them.",
+      "Forensic Investigations: Develop skills in conducting investigations to uncover fraudulent activities.",
+      "Prevention Strategies: Learn methods to prevent fraud in business operations."
+    ],
+    "image": "forensic_accounting.jpg",
+    "mentor": "james_brown",
+    "level": "Advanced",
+    "learn_hours": "26",
+    "score": 4.9,
+    "review": 20187,
+    "original_price": 599000,
+    "discounted_price": 519000,
+    "categories": "4"
+  },
+  {
+    "id": "40007",
+    "title": "Cost Accounting: Managing Business Costs",
+    "description": "Specialize in cost accounting to help businesses manage and reduce costs, improve efficiency, and make data-driven decisions.",
+    "benefits": [
+      "Cost Analysis: Learn how to perform detailed cost analysis to drive business decisions.",
+      "Budgeting and Forecasting: Understand how to create accurate financial forecasts.",
+      "Efficiency Improvement: Discover techniques for increasing business efficiency through cost control."
+    ],
+    "image": "cost_accounting.jpg",
+    "mentor": "nina_roberts",
+    "level": "Intermediate",
+    "learn_hours": "21",
+    "score": 4.6,
+    "review": 14398,
+    "original_price": 489000,
+    "discounted_price": 419000,
+    "categories": "4"
+  },
+  {
+    "id": "40008",
+    "title": "International Accounting Standards",
+    "description": "Get to grips with international accounting standards and financial reporting frameworks, including IFRS and GAAP, to work in global accounting.",
+    "benefits": [
+      "IFRS & GAAP: Understand and apply the international financial reporting standards (IFRS) and generally accepted accounting principles (GAAP).",
+      "Global Financial Reporting: Learn how to prepare and analyze financial reports for global businesses.",
+      "Cross-border Transactions: Manage the accounting challenges of multinational corporations."
+    ],
+    "image": "international_accounting.jpg",
+    "mentor": "emma_white",
+    "level": "Advanced",
+    "learn_hours": "25",
+    "score": 4.8,
+    "review": 17934,
+    "original_price": 549000,
+    "discounted_price": 479000,
+    "categories": "4"
+  },
+  {
+    "id": "50001",
+    "title": "Data Science for Beginners",
+    "description": "Start your journey in data science by learning the basics of data analysis, statistics, and machine learning. Ideal for those new to the field.",
+    "benefits": [
+      "Introduction to Data Science: Learn the fundamentals of data science and its applications.",
+      "Basic Statistics: Understand core statistical concepts used in data analysis.",
+      "Data Wrangling: Learn how to clean and preprocess raw data for analysis."
+    ],
+    "image": "data_science_beginners.jpg",
+    "mentor": "john_doe",
+    "level": "Beginner",
+    "learn_hours": "20",
+    "score": 4.7,
+    "review": 15487,
+    "original_price": 399000,
+    "discounted_price": 329000,
+    "categories": "5"
+  },
+  {
+    "id": "50002",
+    "title": "Python for Data Science",
+    "description": "Master Python, the most popular programming language in data science. Learn to analyze, visualize, and model data with Python libraries.",
+    "benefits": [
+      "Python Fundamentals: Understand Python syntax, functions, and data structures.",
+      "Data Libraries: Master key libraries such as NumPy, pandas, and Matplotlib.",
+      "Data Modeling: Learn to create predictive models using Python."
+    ],
+    "image": "python_data_science.jpg",
+    "mentor": "jane_smith",
+    "level": "Intermediate",
+    "learn_hours": "25",
+    "score": 4.8,
+    "review": 19847,
+    "original_price": 499000,
+    "discounted_price": 419000,
+    "categories": "5"
+  },
+  {
+    "id": "50003",
+    "title": "Machine Learning with R",
+    "description": "Unlock the power of machine learning using R. This course covers both supervised and unsupervised learning algorithms.",
+    "benefits": [
+      "R Programming: Get comfortable with the basics of R, a language tailored for data analysis.",
+      "Supervised Learning: Explore algorithms such as linear regression and decision trees.",
+      "Unsupervised Learning: Learn clustering techniques and anomaly detection."
+    ],
+    "image": "ml_with_r.jpg",
+    "mentor": "michael_ross",
+    "level": "Advanced",
+    "learn_hours": "30",
+    "score": 4.9,
+    "review": 17432,
+    "original_price": 599000,
+    "discounted_price": 499000,
+    "categories": "5"
+  },
+  {
+    "id": "50004",
+    "title": "Data Visualization with Tableau",
+    "description": "Master data visualization techniques and create stunning visualizations using Tableau to communicate data insights effectively.",
+    "benefits": [
+      "Tableau Basics: Learn how to create dashboards and reports using Tableau.",
+      "Data Visualization Principles: Understand best practices for effective data presentation.",
+      "Interactive Dashboards: Build dynamic and interactive dashboards for business insights."
+    ],
+    "image": "tableau_data_viz.jpg",
+    "mentor": "linda_chen",
+    "level": "Intermediate",
+    "learn_hours": "22",
+    "score": 4.7,
+    "review": 14376,
+    "original_price": 449000,
+    "discounted_price": 379000,
+    "categories": "5"
+  },
+  {
+    "id": "50005",
+    "title": "Deep Learning with TensorFlow",
+    "description": "Dive deep into neural networks and deep learning with TensorFlow. Learn how to build and train models for image recognition, NLP, and more.",
+    "benefits": [
+      "TensorFlow Framework: Understand the fundamentals of TensorFlow and how to use it for deep learning.",
+      "Neural Networks: Learn how to build, train, and optimize neural networks.",
+      "Real-World Applications: Apply deep learning to tasks such as image classification and natural language processing."
+    ],
+    "image": "deep_learning_tensorflow.jpg",
+    "mentor": "david_lee",
+    "level": "Advanced",
+    "learn_hours": "35",
+    "score": 4.9,
+    "review": 22168,
+    "original_price": 699000,
+    "discounted_price": 599000,
+    "categories": "5"
+  },
+  {
+    "id": "50006",
+    "title": "Big Data Analytics with Hadoop",
+    "description": "Learn how to handle and analyze big data using Hadoop, the open-source framework that powers data-driven organizations.",
+    "benefits": [
+      "Hadoop Ecosystem: Get familiar with Hadoop’s components including HDFS, MapReduce, and YARN.",
+      "Big Data Analytics: Learn techniques for processing and analyzing large datasets.",
+      "Hadoop Hands-On: Set up and work with Hadoop clusters for real-world data challenges."
+    ],
+    "image": "big_data_hadoop.jpg",
+    "mentor": "susan_clark",
+    "level": "Advanced",
+    "learn_hours": "28",
+    "score": 4.8,
+    "review": 17845,
+    "original_price": 649000,
+    "discounted_price": 549000,
+    "categories": "5"
+  },
+  {
+    "id": "50007",
+    "title": "Statistics for Data Science",
+    "description": "Gain a solid foundation in statistics, an essential skill for any data scientist. Learn to apply statistical techniques to data analysis and machine learning.",
+    "benefits": [
+      "Descriptive Statistics: Learn how to summarize and visualize data.",
+      "Inferential Statistics: Understand hypothesis testing, confidence intervals, and regression analysis.",
+      "Statistical Modeling: Use statistical methods for predictive analytics."
+    ],
+    "image": "statistics_data_science.jpg",
+    "mentor": "nina_williams",
+    "level": "Intermediate",
+    "learn_hours": "18",
+    "score": 4.6,
+    "review": 13654,
+    "original_price": 379000,
+    "discounted_price": 319000,
+    "categories": "5"
+  },
+  {
+    "id": "50008",
+    "title": "Natural Language Processing (NLP) with Python",
+    "description": "Explore how to work with text data and build NLP models using Python. Learn how to develop applications such as chatbots and sentiment analysis tools.",
+    "benefits": [
+      "Text Processing: Learn how to clean and process text data for analysis.",
+      "NLP Techniques: Explore tokenization, part-of-speech tagging, and named entity recognition.",
+      "Building NLP Models: Implement sentiment analysis, language modeling, and chatbot development."
+    ],
+    "image": "nlp_python.jpg",
+    "mentor": "emma_brown",
+    "level": "Advanced",
+    "learn_hours": "24",
+    "score": 4.7,
+    "review": 18427,
+    "original_price": 529000,
+    "discounted_price": 449000,
+    "categories": "5"
   }
 ]
