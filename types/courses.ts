@@ -1,8 +1,5 @@
 export interface Courses {
   id: number;
-  title: string;
-  description: string;
-  benefits: string[];
   image: string;
   mentor: string;
   level: string;

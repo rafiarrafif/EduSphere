@@ -50,6 +50,7 @@ const componentMap: Record<string, any> = {
   mainComponent,
   langComponent,
 };
+
 const component = computed(
   () => componentMap[landingPageStore.sidebarComponent]
 );

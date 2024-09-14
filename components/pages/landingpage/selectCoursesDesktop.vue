@@ -63,9 +63,7 @@
         >
           <div v-for="(course, index) in courses" :key="index">
             <CardsSelectCoursesLandingpage
-              :name="course.title"
-              :description="course.description"
-              :benefits="course.benefits"
+              :id="course.id"
               :image="course.image"
               :mentor="course.mentor"
               :star="course.score"

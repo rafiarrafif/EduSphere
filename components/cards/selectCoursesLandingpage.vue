@@ -11,7 +11,7 @@
     <div class="w-60 mt-2">
       <div class="flex flex-col gap-1.5">
         <h1 class="font-bold leading-5">
-          {{ props.name }}
+          {{ $t("data.courses.title." + props.id) }}
         </h1>
         <span class="flex text-xs font-light">{{
           formatMentor(props.mentor)
@@ -47,9 +47,7 @@
 
 <script lang="ts" setup>
 const props = defineProps<{
-  name: string;
-  description: string;
-  benefits: string[];
+  id: number;
   image: string;
   mentor: string;
   star: number;
