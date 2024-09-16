@@ -3,9 +3,9 @@
     <div v-if="landingPageStore.languagePopupState">
       <PagesLandingpageSelectLanguageDesktop />
     </div>
-    <div v-if="isDeviceDetected" class="w-full h-fit fixed z-[800]">
+    <div class="w-full h-fit fixed z-[800]">
       <PagesLandingpageNavDesktop v-if="isDesktop" />
-      <PagesLandingpageNavMobile v-if="!isDesktop" />
+      <PagesLandingpageNavMobile v-if="isMobile" />
     </div>
     <div
       style="height: 12232px"
@@ -29,6 +29,11 @@ const deviceType = useDeviceType();
 const isDesktop = computed(() => {
   return (
     deviceType.deviceType === "laptop" || deviceType.deviceType === "desktop"
+  );
+});
+const isMobile = computed(() => {
+  return (
+    deviceType.deviceType === "mobile" || deviceType.deviceType === "tablet"
   );
 });
 

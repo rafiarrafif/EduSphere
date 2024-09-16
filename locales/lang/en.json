@@ -1,7 +1,7 @@
 {
   "welcome": "Welcome",
-  "SignUp": "Sign Up",
-  "LogIn": "Log In",
+  "signUp": "Sign Up",
+  "logIn": "Log In",
   "tryDemo": "Try Demo",
   "explore": "Explore",
   "back": "Back",

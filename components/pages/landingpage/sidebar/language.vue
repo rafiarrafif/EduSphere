@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-8">
     <button
       @click="changeLayout('mainComponent')"
       class="flex items-center gap-1 rounded-lg -mt-4 py-2 hover:bg-darkGray-200"

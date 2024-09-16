@@ -1,6 +1,8 @@
 <template>
   <div class="relative">
-    <div class="absolute z-50 top-[-10px] w-full bg-black h-3">okoko</div>
+    <div class="absolute z-50 top-[-10px] w-full bg-black h-3 hidden">
+      okoko
+    </div>
     <div class="h-32 w-60 overflow-hidden rounded">
       <img
         src="~/assets/img/courses/vue.jpg"

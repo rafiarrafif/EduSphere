@@ -3,5 +3,6 @@
     <PagesLandingpageHero />
     <PagesLandingpageSponsors />
     <PagesLandingpageSelectCourse />
+    <PagesLandingpageWhyChooseUs />
   </div>
 </template>
