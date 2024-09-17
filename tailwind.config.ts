@@ -80,6 +80,14 @@ export default <Partial<Config>>{
       fontSize: {
         xxs: "0.625rem", // 10px
       },
+      height: {
+        "110": "32rem",
+        "128": "38rem",
+      },
+      width: {
+        "110": "32rem",
+        "128": "38rem",
+      },
     },
   },
   content: [],

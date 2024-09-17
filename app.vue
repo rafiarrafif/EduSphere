@@ -1,6 +1,9 @@
 <template>
   <div>
     <NuxtLayout :name="layout">
+      <div v-if="isLoading">
+        <Loading />
+      </div>
       <NuxtPage />
     </NuxtLayout>
   </div>
@@ -20,5 +23,9 @@ if (route.path === "/") {
 } else {
   layout.value = "desktop-student";
 }
-console.log(layout.value);
+
+const isLoading = ref(true);
+onMounted(() => {
+  isLoading.value = false;
+});
 </script>
