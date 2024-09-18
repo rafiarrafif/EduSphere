@@ -6,7 +6,9 @@
       <div
         class="bg-accent-500 h-full w-128 pt-10 pb-8 rounded-3xl -mr-6 z-10 flex flex-col justify-between max-2xl:pb-12 max-xl:w-full max-xl:pt-4 max-xl:pb-8"
       >
-        <div class="ml-10 mr-24 mt-4 flex flex-col gap-4 max-xl:w-110">
+        <div
+          class="ml-10 mr-24 mt-4 flex flex-col gap-4 max-xl:w-110 max-sm:w-fill-available"
+        >
           <h1 class="text-primary-950 font-semibold text-2xl">
             Looking for the Best for Your Child?
           </h1>
