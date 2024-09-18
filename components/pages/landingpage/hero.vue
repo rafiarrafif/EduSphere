@@ -2,7 +2,8 @@
   <div>
     <div id="text-hero" class="w-full pt-60 max-sm:pt-48">
       <h1
-        class="text-center text-darkGray-950 font-extrabold text-7xl max-sm:text-4xl max-md:text-6xl animate__animated animate__fadeInUp"
+        class="text-center text-darkGray-950 font-extrabold text-7xl max-sm:text-4xl max-md:text-6xl"
+        v-show-when-see
       >
         {{ $t("landingPage.hero.title.dontJust") }}
         <span class="text-secondary-500 shadow-secondary">{{
@@ -11,7 +12,8 @@
         >—
       </h1>
       <h1
-        class="text-center text-darkGray-950 font-extrabold text-7xl max-sm:text-4xl max-md:text-6xl mt-2 animate__animated animate__fadeInUp"
+        class="text-center text-darkGray-950 font-extrabold text-7xl max-sm:text-4xl max-md:text-6xl mt-2"
+        v-show-when-see
         style="animation-delay: 0.1s"
       >
         <span class="text-secondary-500 shadow-secondary">{{
@@ -22,21 +24,15 @@
       <div
         class="flex flex-col text-center mt-6 font-medium text-darkGray-900 text-lg max-sm:text-sm"
       >
-        <p
-          class="animate__animated animate__fadeInUp"
-          style="animation-delay: 0.2s"
-        >
+        <p class="" v-show-when-see style="animation-delay: 0.2s">
           {{ $t("landingPage.hero.description.first") }}
         </p>
-        <p
-          class="animate__animated animate__fadeInUp"
-          style="animation-delay: 0.25s"
-        >
+        <p class="" v-show-when-see style="animation-delay: 0.25s">
           {{ $t("landingPage.hero.description.second") }}
         </p>
       </div>
       <div class="flex justify-center gap-6 mt-10">
-        <nuxt-link to="" class="animate__animated animate__fadeInLeft">
+        <nuxt-link to="" v-show-when-see:animate__fadeInLeft>
           <button
             class="bg-secondary-400 hover:bg-secondary-500 py-3 pl-8 pr-6 max-sm:pl-9 max-sm:pr-7 flex items-center gap-2 rounded-lg transition-all"
           >
@@ -50,7 +46,7 @@
             />
           </button>
         </nuxt-link>
-        <nuxt-link to="" class="animate__animated animate__fadeInRight">
+        <nuxt-link to="" v-show-when-see:animate__fadeInRight>
           <button
             class="py-3 pl-8 pr-6 flex items-center gap-2 rounded-lg hover:bg-darkGray-200 transition-all"
           >

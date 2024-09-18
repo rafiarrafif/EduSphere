@@ -4,5 +4,6 @@
     <PagesLandingpageSponsors />
     <PagesLandingpageSelectCourse />
     <PagesLandingpageWhyChooseUs />
+    <PagesLandingpageForParent />
   </div>
 </template>
