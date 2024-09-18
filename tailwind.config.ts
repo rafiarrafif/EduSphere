@@ -81,6 +81,7 @@ export default <Partial<Config>>{
         xxs: "0.625rem", // 10px
       },
       height: {
+        "100": "28rem",
         "110": "32rem",
         "128": "38rem",
         "136": "46rem",
@@ -88,6 +89,7 @@ export default <Partial<Config>>{
         "148": "58rem",
       },
       width: {
+        "100": "28rem",
         "110": "32rem",
         "128": "38rem",
         "136": "46rem",
