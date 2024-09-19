@@ -4,7 +4,7 @@
   >
     <div id="items" class="z-10 relative">
       <div
-        class="w-full flex flex-wrap gap-12 justify-center py-6 mt-4 max-xl:px-4"
+        class="w-full flex flex-wrap gap-12 justify-center py-6 mt-4 max-xl:px-4 max-sm:gap-8"
       >
         <div
           v-for="(data, index) in dataDescriptions"

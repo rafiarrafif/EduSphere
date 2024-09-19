@@ -5,12 +5,12 @@
     >
       <Icon :name="props.icon" :size="iconSize" class="bg-secondary-50" />
     </div>
-    <div class="flex gap-1 flex-col w-72">
+    <div class="flex gap-1 flex-col w-72 max-sm:w-80">
       <h1 class="font-semibold text-secondary-50 text-lg max-2xl:text-center">
         {{ props.title }}
       </h1>
       <span
-        class="text-darkGray-200 max-2xl:text-xs max-2xl:text-center transition-all"
+        class="text-darkGray-200 max-2xl:text-xs max-2xl:text-center max-sm:text-base transition-all"
         >{{ props.description }}</span
       >
     </div>

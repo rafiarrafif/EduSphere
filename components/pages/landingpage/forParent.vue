@@ -1,18 +1,18 @@
 <template>
-  <div class="w-full mt-24 px-8 pl-12">
+  <div class="w-full mt-24 px-8 pl-12 max-sm:px-2">
     <div
-      class="flex justify-center -ml-6 h-96 max-2xl:h-100 items-stretch max-xl:flex-col max-xl:h-fit"
+      class="flex justify-center -ml-6 h-96 max-2xl:h-100 items-stretch max-xl:flex-col max-xl:h-fit max-sm:ml-0"
     >
       <div
         class="bg-accent-500 h-full w-128 pt-10 pb-8 rounded-3xl -mr-6 z-10 flex flex-col justify-between max-2xl:pb-12 max-xl:w-full max-xl:pt-4 max-xl:pb-8"
       >
         <div
-          class="ml-10 mr-24 mt-4 flex flex-col gap-4 max-xl:w-110 max-sm:w-fill-available"
+          class="ml-10 mr-24 mt-4 flex flex-col gap-4 max-xl:w-110 max-sm:w-fill-available max-sm:ml-6 max-sm:mr-10"
         >
-          <h1 class="text-primary-950 font-semibold text-2xl">
+          <h1 class="text-primary-950 font-semibold text-2xl max-sm:text-xl">
             Looking for the Best for Your Child?
           </h1>
-          <p class="font-medium text-darkGray-950">
+          <p class="font-medium text-darkGray-950 max-sm:text-sm">
             As a parent, you want to ensure your child receives the best
             education possible. With detailed progress reports—including grades,
             study time, and areas for improvement—you can actively support and
@@ -20,18 +20,20 @@
             path to achieve the success they aspire to.
           </p>
         </div>
-        <div class="flex justify-between pr-8 mt-2 max-2xl:mt-14 max-xl:mt-8">
-          <div></div>
-          <div class="flex gap-4">
+        <div
+          class="flex justify-between pr-8 mt-2 max-2xl:mt-14 max-xl:mt-8 max-sm:px-4"
+        >
+          <div class="max-sm:hidden"></div>
+          <div class="flex gap-4 max-sm:flex-col-reverse max-sm:w-full">
             <button
-              class="font-medium px-4 hidden max-xl:block"
+              class="font-medium px-4 hidden max-xl:block max-xl:text-sm"
               @click="showLearnMore = !showLearnMore"
             >
               {{ showLearnMore ? "Hide" : "Show" }} More
             </button>
             <nuxt-link to="">
               <button
-                class="bg-darkGray-950 group flex py-3 px-8 gap-4 items-center rounded-xl"
+                class="bg-darkGray-950 group flex py-3 px-8 gap-4 items-center rounded-xl max-sm:w-full max-sm:justify-center"
               >
                 <span class="text-accent-500 group-hover:opacity-90"
                   >Sign as a Parent</span
