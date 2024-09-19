@@ -5,5 +5,6 @@
     <PagesLandingpageSelectCourse />
     <PagesLandingpageWhyChooseUs />
     <PagesLandingpageForParent />
+    <PagesLandingpageForMentor />
   </div>
 </template>
