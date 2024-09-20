@@ -17,7 +17,11 @@
     >
       <div v-show-when-see class="opacity-0" style="animation-delay: 0.1s">
         <h1 class="w-fit text-4xl font-semibold text-darkGray-950">
-          Why Choose <span class="text-gradient font-bold">Us</span>?
+          {{ $t("landingPage.whyChooseUs.title[0]") }}
+          <span class="text-gradient font-bold">{{
+            $t("landingPage.whyChooseUs.title[1]")
+          }}</span
+          >?
         </h1>
       </div>
       <div class="mt-10">

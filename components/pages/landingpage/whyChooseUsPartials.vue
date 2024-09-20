@@ -16,12 +16,10 @@
       </div>
       <div class="w-fit flex flex-col gap-1 max-sm:-mt-1">
         <h1 class="font-semibold text-xl max-sm:text-lg text-darkGray-950">
-          Personalized Learning Path
+          {{ $t("landingPage.whyChooseUs.content[0].title") }}
         </h1>
         <p class="text-darkGray-800 max-sm:text-sm font-medium">
-          Tailor your learning journey with a fully customized path designed
-          around your goals and interests, ensuring you master what truly
-          matters to you.
+          {{ $t("landingPage.whyChooseUs.content[0].description") }}
         </p>
       </div>
     </div>
@@ -41,11 +39,10 @@
       </div>
       <div class="w-fit flex flex-col gap-1 max-sm:-mt-1">
         <h1 class="font-semibold text-xl max-sm:text-lg text-darkGray-950">
-          Advanced Learning Analytics
+          {{ $t("landingPage.whyChooseUs.content[1].title") }}
         </h1>
         <p class="text-darkGray-800 max-sm:text-sm font-medium">
-          Receive in-depth analysis of your strengths and weaknesses, along with
-          personalized recommendations to improve and excel.
+          {{ $t("landingPage.whyChooseUs.content[1].description") }}
         </p>
       </div>
     </div>
@@ -65,11 +62,10 @@
       </div>
       <div class="w-fit flex flex-col gap-1 max-sm:-mt-1">
         <h1 class="font-semibold text-xl max-sm:text-lg text-darkGray-950">
-          Unique Achievements and Badges
+          {{ $t("landingPage.whyChooseUs.content[2].title") }}
         </h1>
         <p class="text-darkGray-800 max-sm:text-sm font-medium">
-          Earn badges and achievements as you progress, with a gamified system
-          that motivates and rewards your efforts and milestones.
+          {{ $t("landingPage.whyChooseUs.content[2].description") }}
         </p>
       </div>
     </div>
@@ -89,12 +85,10 @@
       </div>
       <div class="w-fit flex flex-col gap-1 max-sm:-mt-1">
         <h1 class="font-semibold text-xl max-sm:text-lg text-darkGray-950">
-          Dynamic Community Integration
+          {{ $t("landingPage.whyChooseUs.content[3].title") }}
         </h1>
         <p class="text-darkGray-800 max-sm:text-sm font-medium">
-          Connect and engage with a vibrant community through real-time
-          discussions, questions, and collaborative learning, fostering a
-          supportive network.{{ deviceType }}{{ isMobile }}
+          {{ $t("landingPage.whyChooseUs.content[3].description") }}
         </p>
       </div>
     </div>

@@ -17,7 +17,7 @@
             'gradient-button ': isActiveRoadmap(roadmap.id),
           }"
         >
-          {{ roadmap.name }}
+          {{ $t("landingPage.roadmap.name." + roadmap.slug) }}
         </button>
         <span
           class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary-500 rounded-full transition-all"
@@ -41,7 +41,8 @@
           <button
             class="w-fit mt-4 text-sm border py-2 px-6 rounded-lg border-primary-950 font-semibold transition-all hover:bg-darkGray-200"
           >
-            {{ $t("explore") }} {{ activeRoadmap?.name }}
+            {{ $t("explore") }}
+            {{ $t("landingPage.roadmap.name." + activeRoadmap?.slug) }}
           </button>
         </nuxt-link>
       </div>

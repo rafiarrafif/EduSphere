@@ -10,14 +10,10 @@
           class="ml-10 mr-24 mt-4 flex flex-col gap-4 max-xl:w-110 max-sm:w-fill-available max-sm:ml-6 max-sm:mr-10"
         >
           <h1 class="text-primary-950 font-semibold text-2xl max-sm:text-xl">
-            Looking for the Best for Your Child?
+            {{ $t("landingPage.forParent.title") }}
           </h1>
           <p class="font-medium text-darkGray-950 max-sm:text-sm">
-            As a parent, you want to ensure your child receives the best
-            education possible. With detailed progress reports—including grades,
-            study time, and areas for improvement—you can actively support and
-            guide them along the way. Together, ensure they stay on the right
-            path to achieve the success they aspire to.
+            {{ $t("landingPage.forParent.description") }}
           </p>
         </div>
         <div
