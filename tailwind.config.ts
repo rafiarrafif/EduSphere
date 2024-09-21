@@ -87,6 +87,7 @@ export default <Partial<Config>>{
         "136": "46rem",
         "142": "52rem",
         "148": "58rem",
+        "158": "76rem",
         "192": "96rem",
       },
       width: {
@@ -96,6 +97,7 @@ export default <Partial<Config>>{
         "136": "46rem",
         "142": "52rem",
         "148": "58rem",
+        "158": "76rem",
         "192": "96rem",
       },
     },
