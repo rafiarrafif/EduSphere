@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-full w-148 rounded-custom relative overflow-hidden max-2xl:w-136 max-xl:w-full max-xl:-mt-8 max-xl:pt-6 max-xl:pb-4"
+    class="h-fit w-148 rounded-custom relative overflow-hidden pb-4 max-2xl:w-136 max-xl:w-full max-xl:-mt-8 max-xl:pt-6 max-xl:pb-4"
   >
     <div id="items" class="z-10 relative">
       <div

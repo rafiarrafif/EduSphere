@@ -75,7 +75,7 @@
 import { useI18n } from "#imports";
 const { t } = useI18n();
 
-const benefits = ref([
+const benefits = computed(() => [
   t("landingPage.forMentor.rewards[0]"),
   t("landingPage.forMentor.rewards[1]"),
   t("landingPage.forMentor.rewards[2]"),

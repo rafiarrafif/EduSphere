@@ -6,5 +6,6 @@
     <PagesLandingpageWhyChooseUs />
     <PagesLandingpageForParent />
     <PagesLandingpageForMentor />
+    <PagesLandingpageTestimonials />
   </div>
 </template>

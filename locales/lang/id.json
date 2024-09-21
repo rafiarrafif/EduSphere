@@ -5,6 +5,8 @@
   "tryDemo": "Coba Demo",
   "explore": "Jelajahi",
   "back": "Kembali",
+  "showMore": "Selengkapnya",
+  "hideMore": "Sembunyikan",
 
   "landingPage.navbar.desktop.search": "Apa yang ingin kamu pelajari hari ini?",
   "landingPage.hero.title.dontJust": "Jangan Hanya",
@@ -20,19 +22,15 @@
   "landingPage.roadmap.name.web-development": "Pengembangan Web",
   "landingPage.roadmap.title.web-development": "Bangun Website dengan Pengembangan Web",
   "landingPage.roadmap.description.web-development": "Kuasi keterampilan penting untuk membuat website dinamis dan responsif. Dari HTML dan CSS hingga framework JavaScript lanjutan, kursus kami memberi alat untuk menjadi pengembang full-stack dan mewujudkan ide-ide Anda.",
-
   "landingPage.roadmap.name.mechine-learning": "Pembelajaran Mesin",
   "landingPage.roadmap.title.mechine-learning": "Transformasi Karirmu dengan Pembelajaran Mesin",
   "landingPage.roadmap.description.mechine-learning": "Masuki dunia pembelajaran mesin dan buka peluang tanpa batas. Kursus praktis kami mengajarkan bagaimana membangun model prediktif, mengotomatisasi proses, dan mendorong inovasi dalam industri mana pun. Jadilah ahli teknologi AI dan tingkatkan karir Anda.",
-
   "landingPage.roadmap.name.game-design": "Desain Game",
   "landingPage.roadmap.title.game-design": "Kuasi Seni Desain Game",
   "landingPage.roadmap.description.game-design": "Masuki dunia cerita interaktif dan mekanika game. Pelajari cara membuat pengalaman imersif dari konsep hingga desain akhir menggunakan alat dan teknologi terbaru.",
-
   "landingPage.roadmap.name.accountant": "Akuntansi",
   "landingPage.roadmap.title.accountant": "Bangun Keahlian Akuntansi Anda",
   "landingPage.roadmap.description.accountant": "Kembangkan keterampilan penting untuk mengelola catatan keuangan, menganalisis data, dan membuat keputusan yang tepat. Dari pembukuan dasar hingga pelaporan keuangan tingkat lanjut, jalur ini akan memandu Anda menuju karir sukses di bidang akuntansi.",
-
   "landingPage.roadmap.name.data-science": "Ilmu Data",
   "landingPage.roadmap.title.data-science": "Kuasi Kekuatan Ilmu Data",
   "landingPage.roadmap.description.data-science": "Jelajahi bidang ilmu data yang berkembang pesat. Kuasai analisis data, pembelajaran mesin, dan alat big data untuk mengubah data mentah menjadi wawasan bermakna dan mendorong pengambilan keputusan dalam industri apa pun.",
@@ -53,7 +51,7 @@
   "landingPage.forParent.button": "Daftar sebagai Orang Tua",
   "landingPage.forParent.content[0].title": "Laporan Kemajuan Terperinci",
   "landingPage.forParent.content[0].description": "Dapatkan wawasan tentang kinerja akademis anak Anda, termasuk modul yang telah diselesaikan, nilai ujian, dan waktu yang dihabiskan untuk belajar.",
-  "landingPage.forParent.content[1].title": "Umpan Balik yang Dipersonalisasi",
+  "landingPage.forParent.content[1].title": "Umpan Balik Dipersonalisasi",
   "landingPage.forParent.content[1].description": "Identifikasi area di mana anak Anda unggul dan di mana mereka mungkin memerlukan dukungan tambahan, dengan rekomendasi yang ditargetkan untuk perbaikan.",
   "landingPage.forParent.content[2].title": "Manajemen Waktu Belajar",
   "landingPage.forParent.content[2].description": "Bantu anak Anda menetapkan kebiasaan belajar yang sehat dengan alat yang melacak waktu belajar mereka dan menyarankan jadwal belajar yang seimbang.",
