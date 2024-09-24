@@ -7,5 +7,8 @@
     <PagesLandingpageForParent />
     <PagesLandingpageForMentor />
     <PagesLandingpageTestimonials />
+    <PagesLandingpageFaq />
+    <PagesLandingpageContact />
+    <FooterLandingpage />
   </div>
 </template>

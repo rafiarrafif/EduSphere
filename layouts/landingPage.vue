@@ -8,7 +8,6 @@
       <PagesLandingpageNavMobile v-if="isMobile" />
     </div>
     <div
-      style="height: 12232px"
       :class="{ 'overflow-hidden': landingPageStore.languagePopupState }"
       class="bg-primary-50"
     >

@@ -6,7 +6,9 @@
       'pt-6 px-8': isOnTop,
     }"
   >
-    <img src="/logo/main.png" alt="logo-utama" class="ml-8 mr-4" />
+    <div class="mr-2 ml-12">
+      <LogoMain />
+    </div>
     <div
       class="flex items-center bg-primary-50 w-fit border rounded-full flex-grow transition-all"
       :class="{

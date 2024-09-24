@@ -13,7 +13,7 @@
         Discover how our platform has transformed the learning journeys of
         thousands. From career advancements to personal growth, hear firsthand
         experiences from those who have unlocked new opportunities through our
-        expert-led courses. {{ scrollInterfall }}
+        expert-led courses.
       </p>
     </div>
     <div
