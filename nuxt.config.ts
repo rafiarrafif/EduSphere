@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/google-fonts",
     "@nuxt/icon",
+    "nuxt-svgo-loader",
   ],
   tailwindcss: {
     exposeConfig: true,

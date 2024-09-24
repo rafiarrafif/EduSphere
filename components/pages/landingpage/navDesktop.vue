@@ -7,7 +7,9 @@
     }"
   >
     <div class="mr-2 ml-12">
-      <LogoMain />
+      <button class="h-fit w-fit" @click="scrollToTop">
+        <LogoMain />
+      </button>
     </div>
     <div
       class="flex items-center bg-primary-50 w-fit border rounded-full flex-grow transition-all"
@@ -102,4 +104,8 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 </script>

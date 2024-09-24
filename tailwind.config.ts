@@ -101,6 +101,8 @@ export default <Partial<Config>>{
         "158": "76rem",
         "186": "94rem",
         "192": "96rem",
+        "200": "100rem",
+        "210": "110rem",
       },
     },
   },

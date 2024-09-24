@@ -3,10 +3,12 @@
     class="flex justify-center w-full bg-secondary-500 py-40 mt-10 max-lg:mt-0"
   >
     <div
-      class="flex flex-col gap-8 w-148 px-12 py-12 rounded-lg shadow bg-primary-50"
+      class="flex flex-col gap-8 w-148 px-12 py-12 rounded-lg shadow bg-primary-50 mx-12 max-md:mx-4 max-md:px-8 max-sm:mx-2 max-sm:px-4"
     >
-      <div class="flex flex-col text-center mx-20 gap-2">
-        <h1 class="text-3xl font-semibold text-darkGray-950">
+      <div
+        class="flex flex-col text-center mx-20 gap-2 max-lg:mx-12 max-md:mx-6 max-sm:mx-2"
+      >
+        <h1 class="text-3xl font-semibold text-darkGray-950 max-md:text-2xl">
           Stay Connected With Us
         </h1>
         <p class="text-sm text-darkGray-900">
@@ -17,7 +19,7 @@
       </div>
       <div>
         <form @submit.prevent="submitForm" class="flex flex-col gap-2">
-          <div class="flex gap-2">
+          <div class="flex gap-2 max-md:flex-col">
             <input
               v-model="email"
               type="email"
@@ -59,6 +61,7 @@ const text = ref();
 
 const submitForm = () => {
   alert(`Form akan dikirimkan ke email ${email.value}`);
+  // alert(generate());
 };
 </script>
 

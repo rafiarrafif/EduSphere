@@ -24,6 +24,7 @@
     "vue": "latest"
   },
   "devDependencies": {
-    "@pinia-plugin-persistedstate/nuxt": "^1.2.1"
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
+    "nuxt-svgo-loader": "^0.4.1"
   }
 }
