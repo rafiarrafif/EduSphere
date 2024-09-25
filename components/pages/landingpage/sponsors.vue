@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-secondary-500 pt-8 pb-16 px-12">
+  <div class="bg-secondary-500 pt-12 pb-16 px-12">
     <h1
       class="w-full text-center font-medium text-secondary-950 max-sm:text-xs"
     >
