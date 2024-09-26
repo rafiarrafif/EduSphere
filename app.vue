@@ -18,7 +18,7 @@ locale.value = langPreference.locale;
 
 const route = useRoute();
 const layout = ref<string>();
-if (route.path === "/") {
+if (route.path === "/" || route.path === "/login") {
   layout.value = "landing-page";
 } else {
   layout.value = "desktop-student";

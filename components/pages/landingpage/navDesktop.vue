@@ -42,20 +42,17 @@
         <Icon name="solar:cart-large-2-linear" size="1.4em" />
       </div>
       <div class="flex gap-2">
-        <nuxt-link to="">
-          <button
-            class="text-black bg-transparent text-sm py-3 px-5 rounded-lg font-semibold hover:bg-darkGray-200 transition-all"
-          >
-            {{ $t("logIn") }}
-          </button>
-        </nuxt-link>
-        <nuxt-link to="">
-          <button
-            class="bg-black text-white text-sm py-3 px-5 font-semibold rounded-lg hover:bg-darkGray-950 transition-all"
-          >
-            {{ $t("signUp") }}
-          </button>
-        </nuxt-link>
+        <button
+          @click="toLogin"
+          class="text-black bg-transparent text-sm py-3 px-5 rounded-lg font-semibold hover:bg-darkGray-200 transition-all"
+        >
+          {{ $t("logIn") }}
+        </button>
+        <button
+          class="bg-black text-white text-sm py-3 px-5 font-semibold rounded-lg hover:bg-darkGray-950 transition-all"
+        >
+          {{ $t("signUp") }}
+        </button>
       </div>
       <div
         @click="showLanguagesPopup"
@@ -107,5 +104,12 @@ onUnmounted(() => {
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+import { useLoginCompStore } from "#imports";
+const loginCompStore = useLoginCompStore();
+const toLogin = () => {
+  window.history.pushState(null, "", "/login");
+  loginCompStore.toggleLoginVisibility(true);
 };
 </script>
