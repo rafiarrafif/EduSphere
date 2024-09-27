@@ -9,7 +9,7 @@
       <Icon name="solar:hamburger-menu-linear" size="1.6em" />
     </button>
     <div>
-      <img src="/logo/main.png" class="w-fit h-6" />
+      <img src="/logo/main.svg" class="w-fit h-6" />
     </div>
     <div class="h-full w-6"></div>
     <div class="flex items-center gap-6 absolute h-full w-fit right-8">

@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
+  app: {
+    head: {
+      link: [{ rel: "icon", type: "image/png", href: "/logo/icon_site.png" }],
+    },
+  },
   plugins: ["~/plugins/directives.ts"],
   modules: [
     "@pinia/nuxt",
@@ -10,6 +15,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/google-fonts",
     "@nuxt/icon",
+    "nuxt-svgo-loader",
   ],
   tailwindcss: {
     exposeConfig: true,

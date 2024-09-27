@@ -4,16 +4,17 @@
       id="title"
       class="flex flex-col w-full items-center pt-28 max-sm:pt-16 gap-4"
     >
-      <h1 class="text-center text-lightGray-50 text-3xl font-semibold">
-        Hear from Our Learners
+      <h1
+        class="text-center text-lightGray-50 text-3xl font-semibold"
+        v-show-when-see
+      >
+        {{ $t("landingPage.testimonials.title") }}
       </h1>
       <p
         class="text-lightGray-200 text-center w-136 max-lg:w-full max-lg:px-16 max-sm:text-sm max-sm:px-8"
+        v-show-when-see
       >
-        Discover how our platform has transformed the learning journeys of
-        thousands. From career advancements to personal growth, hear firsthand
-        experiences from those who have unlocked new opportunities through our
-        expert-led courses. {{ scrollInterfall }}
+        {{ $t("landingPage.testimonials.subtitle") }}
       </p>
     </div>
     <div

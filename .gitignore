@@ -22,3 +22,6 @@ logs
 .env
 .env.*
 !.env.example
+
+# Script runner for windows
+run.bat

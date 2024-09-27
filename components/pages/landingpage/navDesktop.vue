@@ -6,7 +6,11 @@
       'pt-6 px-8': isOnTop,
     }"
   >
-    <img src="/logo/main.png" alt="logo-utama" class="ml-8 mr-4" />
+    <div class="mr-2 ml-12">
+      <button class="h-fit w-fit" @click="scrollToTop">
+        <LogoMain />
+      </button>
+    </div>
     <div
       class="flex items-center bg-primary-50 w-fit border rounded-full flex-grow transition-all"
       :class="{
@@ -38,20 +42,17 @@
         <Icon name="solar:cart-large-2-linear" size="1.4em" />
       </div>
       <div class="flex gap-2">
-        <nuxt-link to="">
-          <button
-            class="text-black bg-transparent text-sm py-3 px-5 rounded-lg font-semibold hover:bg-darkGray-200 transition-all"
-          >
-            {{ $t("logIn") }}
-          </button>
-        </nuxt-link>
-        <nuxt-link to="">
-          <button
-            class="bg-black text-white text-sm py-3 px-5 font-semibold rounded-lg hover:bg-darkGray-950 transition-all"
-          >
-            {{ $t("signUp") }}
-          </button>
-        </nuxt-link>
+        <button
+          @click="toLogin"
+          class="text-black bg-transparent text-sm py-3 px-5 rounded-lg font-semibold hover:bg-darkGray-200 transition-all"
+        >
+          {{ $t("logIn") }}
+        </button>
+        <button
+          class="bg-black text-white text-sm py-3 px-5 font-semibold rounded-lg hover:bg-darkGray-950 transition-all"
+        >
+          {{ $t("signUp") }}
+        </button>
       </div>
       <div
         @click="showLanguagesPopup"
@@ -100,4 +101,15 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+import { useLoginCompStore } from "#imports";
+const loginCompStore = useLoginCompStore();
+const toLogin = () => {
+  window.history.pushState(null, "", "/login");
+  loginCompStore.toggleLoginVisibility(true);
+};
 </script>

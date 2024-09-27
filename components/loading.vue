@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed top-0 left-0 h-screen w-screen bg-white z-100">
+  <div class="fixed top-0 left-0 h-screen w-screen bg-white z-100 cursor-wait">
     <div class="w-full h-full flex justify-center items-center">
       <img src="/logo/main.svg" class="h-fit w-32 -mt-24 bounce-animation" />
       <span
