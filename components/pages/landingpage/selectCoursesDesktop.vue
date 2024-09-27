@@ -1,6 +1,16 @@
 <template>
   <div class="flex flex-col gap-2">
     <div
+      v-if="hoveredCourseCard"
+      class="absolute z-[99] transform -translate-x-1/2"
+      :style="{
+        top: `${courseCardPosition.top}px`,
+        left: `${courseCardPosition.left}px`,
+      }"
+    >
+      <CardsPopupCourseCard :course="hoveredCourseCard" />
+    </div>
+    <div
       class="w-full hide-scrollbar overflow-x-auto overflow-y-hidden flex gap-6 pb-1"
     >
       <div
@@ -62,7 +72,12 @@
           ref="selectRoadmapScroll"
           class="flex gap-4 mx-2 pb-0.5 mt-8 w-full hide-scrollbar overflow-x-scroll overflow-y-visible"
         >
-          <div v-for="(course, index) in courses" :key="index">
+          <div
+            v-for="(course, index) in courses"
+            :key="index"
+            @mouseenter="showPopup(course, $event)"
+            @mouseleave="hoveredCourseCard = null"
+          >
             <CardsSelectCoursesLandingpage
               :id="course.id"
               :image="course.image"
@@ -102,18 +117,15 @@ const { data: dataRoadmap, error: errorRoadmap } = await useAsyncData<
 >("dataRoadmap", () =>
   $fetch<ApiResponse<Roadmap[]>>("/api/get-roadmap-landingpage")
 );
-
 const { data: dataCourses, error: errorCourses } = await useAsyncData<
   ApiResponse<Courses[]>
 >("dataCourses", () =>
   $fetch<ApiResponse<Courses[]>>("/api/get-courses-landingpage")
 );
-
 const roadmapSelectionActive = computed(() => LandingPageStore.roadmapActive);
 const setRoadmap = (roadmap: number) => {
   LandingPageStore.setSelectCourses(roadmap);
 };
-
 const watchCourses = computed(() => dataCourses.value?.data ?? []);
 const watchRoadmap = computed(() => dataRoadmap.value?.data ?? []);
 const isActiveRoadmap = (roadmap: number) => {
@@ -171,7 +183,19 @@ const activeRoadmap = computed(() => {
   return findActiveRoadmap;
 });
 
-// console.log(roadmaps);
+const hoveredCourseCard = ref<null | object>(null);
+const courseCardPosition = ref({ top: 0, left: 0 });
+function showPopup(course: { [key: string]: any }, event: MouseEvent) {
+  hoveredCourseCard.value = course;
+  const card = event.currentTarget as HTMLElement;
+  const rect = card.getBoundingClientRect();
+  const scrollX = window.scrollX || document.documentElement.scrollLeft;
+  const scrollY = window.scrollY || document.documentElement.scrollTop;
+  courseCardPosition.value = {
+    top: rect.bottom + scrollY,
+    left: rect.left + rect.width / 2 + scrollX,
+  };
+}
 </script>
 
 <style scoped>
