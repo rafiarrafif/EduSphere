@@ -53,7 +53,7 @@
       </div>
       <div class="mt-6">
         <button
-          class="flex justify-center w-full gap-3 bg-accent-500 py-4 rounded-lg pr-4"
+          class="flex justify-center w-full gap-3 bg-accent-500 hover:bg-accent-400 py-4 rounded-lg pr-4"
         >
           <Icon
             name="solar:cart-plus-linear"

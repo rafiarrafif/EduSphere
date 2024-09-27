@@ -1,12 +1,14 @@
 <template>
   <div class="flex flex-col gap-2">
     <div
-      v-if="hoveredCourseCard"
+      v-if="detailCardOpen && hoveredCourseCard"
       class="absolute z-[99] transform -translate-x-1/2"
       :style="{
         top: `${courseCardPosition.top}px`,
         left: `${courseCardPosition.left}px`,
       }"
+      @mouseenter="holdPopup"
+      @mouseleave="closePopupWithDelay"
     >
       <CardsPopupCourseCard :course="hoveredCourseCard" />
     </div>
@@ -76,7 +78,7 @@
             v-for="(course, index) in courses"
             :key="index"
             @mouseenter="showPopup(course, $event)"
-            @mouseleave="hoveredCourseCard = null"
+            @mouseleave="closePopupWithDelay"
           >
             <CardsSelectCoursesLandingpage
               :id="course.id"
@@ -183,9 +185,16 @@ const activeRoadmap = computed(() => {
   return findActiveRoadmap;
 });
 
+let timeoutCard: ReturnType<typeof setTimeout> | null = null;
+const detailCardOpen = ref<boolean>(false);
 const hoveredCourseCard = ref<null | object>(null);
 const courseCardPosition = ref({ top: 0, left: 0 });
 function showPopup(course: { [key: string]: any }, event: MouseEvent) {
+  if (timeoutCard) {
+    clearTimeout(timeoutCard);
+    timeoutCard = null;
+  }
+  detailCardOpen.value = true;
   hoveredCourseCard.value = course;
   const card = event.currentTarget as HTMLElement;
   const rect = card.getBoundingClientRect();
@@ -195,6 +204,17 @@ function showPopup(course: { [key: string]: any }, event: MouseEvent) {
     top: rect.bottom + scrollY,
     left: rect.left + rect.width / 2 + scrollX,
   };
+}
+function holdPopup() {
+  if (timeoutCard) {
+    clearTimeout(timeoutCard);
+    timeoutCard = null;
+  }
+}
+function closePopupWithDelay() {
+  timeoutCard = setTimeout(() => {
+    detailCardOpen.value = false;
+  }, 100);
 }
 </script>
 
