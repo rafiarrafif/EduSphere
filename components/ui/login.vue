@@ -9,9 +9,11 @@
     >
       <div class="mt-16">
         <div class="flex flex-col gap-0.5">
-          <h1 class="text-4xl font-bold text-center mx-14">Welcome Back</h1>
+          <h1 class="text-4xl font-bold text-center mx-14">
+            {{ $t("login.grettings.title") }}
+          </h1>
           <h1 class="text-xs font-medium text-center text-darkGray-950">
-            Please sign in or register a new account
+            {{ $t("login.grettings.description") }}
           </h1>
         </div>
         <div class="mt-6">
@@ -20,7 +22,7 @@
               <input
                 type="email"
                 v-model="email"
-                placeholder="Email"
+                :placeholder="t('login.input.email')"
                 class="w-full py-2 px-4 rounded-lg outline-transparent placeholder:text-sm placeholder-darkGray-400 focus:outline-secondary-500 border border-darkGray-300 transition-all"
                 :class="{
                   'border-red-500': emailErr,
@@ -34,7 +36,7 @@
               >
                 <Icon name="solar:danger-circle-bold" class="text-red-500" />
                 <p class="text-xs font-medium text-red-500 w-fit">
-                  Invalid email address
+                  {{ $t("login.input.email.err") }}
                 </p>
               </div>
             </div>
@@ -42,7 +44,7 @@
               <input
                 type="password"
                 v-model="password"
-                placeholder="Password"
+                :placeholder="t('login.input.password')"
                 class="w-full py-2 px-4 rounded-lg outline-transparent placeholder:text-sm placeholder-darkGray-400 focus:outline-secondary-500 border border-darkGray-300 transition-all"
                 :class="{
                   'border-red-500': passErr,
@@ -56,7 +58,7 @@
               >
                 <Icon name="solar:danger-circle-bold" class="text-red-500" />
                 <p class="text-xs font-medium text-red-500 w-fit">
-                  Password has at least 8 character
+                  {{ $t("login.input.password.err") }}
                 </p>
               </div>
             </div>
@@ -65,13 +67,13 @@
                 type="submit"
                 class="w-full py-3 px-6 mt-3 rounded-lg text-primary-950 bg-accent-500 hover:bg-accent-400 focus:outline-none transition-all text-sm font-medium"
               >
-                Submit
+                {{ $t("login.input.submit") }}
               </button>
               <button
                 type="submit"
                 class="w-full py-3 px-6 mt-1 rounded-lg text-accent-600 bg-transparent hover:bg-darkGray-200 focus:outline-none transition-all text-sm font-medium"
               >
-                Register new account
+                {{ $t("login.additional.register") }}
               </button>
             </div>
           </form>
@@ -79,7 +81,7 @@
             <p
               class="text-center mt-4 mb-4 text-sm font-medium text-darkGray-950"
             >
-              or sign-in with
+              {{ $t("login.additional.oauth") }}
             </p>
             <div class="flex gap-2 justify-center">
               <button
@@ -103,7 +105,7 @@
             <nuxt-link
               to=""
               class="w-fit cursor-pointer px-4 py-2 text-accent-600 text-sm font-medium"
-              >Forgot Password</nuxt-link
+              >{{ $t("login.additional.forgotPassword") }}</nuxt-link
             >
           </div>
         </div>
@@ -120,6 +122,9 @@
 </template>
 
 <script lang="ts" setup>
+import { useI18n } from "#imports";
+const { t } = useI18n();
+
 import { useLoginCompStore } from "#imports";
 const loginCompStore = useLoginCompStore();
 const loginCardElement = ref<HTMLElement | null>(null);

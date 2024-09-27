@@ -15,18 +15,16 @@
       <div class="flex-1 mt-10">
         <div id="header" class="flex flex-col gap-1 max-sm:mx-2">
           <h1 class="text-4xl font-semibold text-primary-950 max-md:text-2xl">
-            Frequently Asked Questions
+            {{ $t("landingPage.faq.title") }}
           </h1>
           <p class="text-medium text-primary-900 max-md:text-sm">
-            Find answers to the most common questions about our platform and
-            courses
+            {{ $t("landingPage.faq.subtitle") }}
           </p>
         </div>
         <div id="content" class="flex flex-col gap-4 w-full mt-10 max-sm:mt-6">
           <div v-for="(question, index) in questions" :key="index">
             <PagesLandingpageFaqContent
-              :question="question.question"
-              :answer="question.answer"
+              :id="question.id"
               :isOpen="index === openQuestion"
               @toggle="toggle(index)"
             />

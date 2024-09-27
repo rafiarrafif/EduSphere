@@ -5,7 +5,7 @@
   >
     <div class="flex justify-between w-full items-center">
       <h1 class="text-darkGray-950 font-medium">
-        {{ props.question }}
+        {{ $t("landingPage.content[" + props.id + "].question") }}
       </h1>
       <div class="w-12 h-full flex justify-end items-center">
         <Icon
@@ -24,7 +24,7 @@
         style="animation-duration: 0.2s"
         v-if="isOpen"
       >
-        {{ props.answer }}
+        {{ $t("landingPage.content[" + props.id + "].answer") }}
       </p>
     </div>
   </div>
@@ -32,8 +32,7 @@
 
 <script lang="ts" setup>
 const props = defineProps({
-  question: { type: String, required: true },
-  answer: { type: String, required: true },
+  id: { type: Number, required: true },
   isOpen: { type: Boolean, required: true },
 });
 </script>
