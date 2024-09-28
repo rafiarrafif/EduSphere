@@ -3,6 +3,9 @@
     <div v-if="landingPageStore.languagePopupState">
       <PagesLandingpageSelectLanguageDesktop />
     </div>
+    <div v-if="landingPageStore.storePopupState">
+      <PagesLandingpageStorePopup />
+    </div>
     <div class="w-full h-fit fixed z-[800]">
       <PagesLandingpageNavDesktop v-if="isDesktop" />
       <PagesLandingpageNavMobile v-if="isMobile" />
