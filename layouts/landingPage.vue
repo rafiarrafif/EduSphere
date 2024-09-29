@@ -1,10 +1,12 @@
 <template>
   <div>
-    <div v-if="landingPageStore.languagePopupState">
-      <PagesLandingpageSelectLanguageDesktop />
-    </div>
-    <div v-if="landingPageStore.cartPopupState">
-      <PagesLandingpageEntryStorePopup />
+    <div v-if="popupStore.popupVisible">
+      <div v-if="popupStore.popupComponent === 'landingpage.lang'">
+        <PagesLandingpageSelectLanguageDesktop />
+      </div>
+      <div v-if="popupStore.popupComponent === 'landingpage.cart'">
+        <PagesLandingpageEntryStorePopup />
+      </div>
     </div>
     <div class="w-full h-fit fixed z-[800]">
       <PagesLandingpageNavDesktop v-if="isDesktop" />
@@ -21,12 +23,10 @@
 
 <script lang="ts" setup>
 import { useDeviceDetection } from "~/composables/useDeviceDetection";
-import { useLandingPageStore } from "#imports";
 import { useDeviceType } from "#imports";
 useDeviceDetection();
 
 const isDeviceDetected = ref(false);
-const landingPageStore = useLandingPageStore();
 const deviceType = useDeviceType();
 const isDesktop = computed(() => {
   return (
@@ -47,4 +47,10 @@ watch(
     }
   }
 );
+
+import { useLandingPageStore } from "#imports";
+const landingPageStore = useLandingPageStore();
+
+import { usePopupStore } from "~/stores/popup";
+const popupStore = usePopupStore();
 </script>

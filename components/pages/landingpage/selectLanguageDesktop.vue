@@ -87,12 +87,14 @@ const landingPageStore = useLandingPageStore();
 const langPreference = useLangPreference();
 const { locale } = useI18n();
 
-const closelangingPageStore = () => {
-  landingPageStore.toggleLanguagePopupState();
-};
-
 const changeLang = (lang: string) => {
   locale.value = lang;
   langPreference.setLocale(lang);
+};
+
+import { usePopupStore } from "~/stores/popup";
+const popupStore = usePopupStore();
+const closelangingPageStore = () => {
+  popupStore.setPopupHide();
 };
 </script>

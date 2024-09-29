@@ -40,7 +40,7 @@
         @click.stop="showCartPopup"
         class="parent-safearea-cart h-9 w-9 flex justify-center items-center rounded-lg hover:bg-darkGray-200 transition-all cursor-pointer"
         :class="{
-          'bg-darkGray-200': landingPageStore.cartPopupState,
+          'bg-darkGray-200': popupStore.popupComponent == 'landingpage.cart',
         }"
       >
         <Icon name="solar:cart-large-2-linear" size="1.4em" />
@@ -62,7 +62,7 @@
         @click.stop="showLanguagesPopup"
         class="parent-safearea-lang w-9 h-9 flex justify-center items-center rounded-lg hover:bg-darkGray-200 transition-all cursor-pointer"
         :class="{
-          'bg-darkGray-200': landingPageStore.languagePopupState,
+          'bg-darkGray-200': popupStore.popupComponent == 'landingpage.lang',
         }"
       >
         <Icon name="solar:earth-linear" size="1.2em" class="text-black" />
@@ -73,19 +73,23 @@
 
 <script lang="ts" setup>
 import { useI18n } from "#imports";
-import { useLandingPageStore } from "~/stores/landingPage";
-
 const { t } = useI18n();
+
+import { useLandingPageStore } from "~/stores/landingPage";
 const landingPageStore = useLandingPageStore();
+
 const isSearchActive = computed(() => landingPageStore.searchIconState);
 const isOnTop = computed(() => landingPageStore.isOnEdgeTop);
 const searchField = ref<HTMLInputElement | null>(null);
 
+import { usePopupStore } from "~/stores/popup";
+const popupStore = usePopupStore();
+
 const showCartPopup = () => {
-  landingPageStore.toggleCartPopupState();
+  popupStore.setPopupShow("landingpage.cart");
 };
 const showLanguagesPopup = () => {
-  landingPageStore.toggleLanguagePopupState();
+  popupStore.setPopupShow("landingpage.lang");
 };
 const switchSearchState = () => {
   landingPageStore.toggleSearchIcon();
@@ -116,6 +120,7 @@ const scrollToTop = () => {
 import { useLoginCompStore } from "#imports";
 const loginCompStore = useLoginCompStore();
 const toLogin = () => {
+  popupStore.setPopupHide();
   window.history.pushState(null, "", "/login");
   loginCompStore.toggleLoginVisibility(true);
 };
