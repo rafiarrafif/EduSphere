@@ -51,8 +51,11 @@
           </div>
         </div>
       </div>
+      {{ props.course.original_price }}
       <div class="mt-6">
         <button
+          v-if="!isInCart"
+          @click="addToCart"
           class="flex justify-center w-full gap-3 bg-accent-500 hover:bg-accent-400 py-4 rounded-lg pr-4"
         >
           <Icon
@@ -64,11 +67,42 @@
             >Add to cart</span
           >
         </button>
+        <button
+          v-else
+          @click="removeFromCart"
+          class="flex justify-center w-full gap-3 bg-primary-700 hover:bg-primary-600 py-4 rounded-lg pr-4"
+        >
+          <Icon
+            name="solar:cart-cross-linear"
+            class="ml-2 w-6 text-darkGray-50"
+            size="1.4em"
+          />
+          <span class="text-base font-semibold text-darkGray-50"
+            >Remove from cart</span
+          >
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { useCartShoppingStore } from "~/stores/cartShopping";
+const cartShoppingStore = useCartShoppingStore();
 const props = defineProps<{ course: { [key: string]: any } }>();
+const isInCart = computed(() =>
+  cartShoppingStore.isItemInCart(props.course.id)
+);
+function addToCart() {
+  const data = {
+    id: props.course.id,
+    image: props.course.image,
+    mentor: props.course.mentor,
+    price: props.course.discounted_price ?? props.course.original_price,
+  };
+  cartShoppingStore.addToCart(data);
+}
+function removeFromCart() {
+  cartShoppingStore.removeFromCart(props.course.id);
+}
 </script>

@@ -4,7 +4,7 @@
       <PagesLandingpageSelectLanguageDesktop />
     </div>
     <div v-if="landingPageStore.storePopupState">
-      <PagesLandingpageStorePopup />
+      <PagesLandingpageEntryStorePopup />
     </div>
     <div class="w-full h-fit fixed z-[800]">
       <PagesLandingpageNavDesktop v-if="isDesktop" />
