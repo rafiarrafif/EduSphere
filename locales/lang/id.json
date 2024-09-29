@@ -8,6 +8,10 @@
   "showMore": "Selengkapnya",
   "hideMore": "Sembunyikan",
 
+  "level.easy": "Mudah",
+  "level.intermediate": "Sedang",
+  "level.advance": "Mahir",
+
   "landingPage.navbar.desktop.search": "Apa yang ingin kamu pelajari hari ini?",
   "landingPage.hero.title.dontJust": "Jangan Hanya",
   "landingPage.hero.title.learn": "Belajar",
