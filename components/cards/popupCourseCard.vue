@@ -51,7 +51,6 @@
           </div>
         </div>
       </div>
-      {{ props.course.original_price }}
       <div class="mt-6">
         <button
           v-if="!isInCart"

@@ -10,7 +10,7 @@
       <h1 class="line-clamp-2 text-sm font-bold text-darkGray-950">
         {{ $t("data.courses.title." + props.item.id) }}
       </h1>
-      <p class="text-xs font-light">Amanda Lee</p>
+      <p class="text-xs font-light">{{ formatMentor(props.item.mentor) }}</p>
       <h1 class="font-bold text-darkGray-950 -mt-0.5 text-sm">
         Rp{{ formatPrice(props.item.price) }}
       </h1>
@@ -22,6 +22,12 @@
 import type { CartItems } from "~/types/cartIems";
 const props = defineProps<{ item: CartItems }>();
 
+function formatMentor(input: string): string {
+  return input
+    .split("_")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
+}
 function formatPrice(input: number): string {
   return input.toLocaleString("en-US");
 }

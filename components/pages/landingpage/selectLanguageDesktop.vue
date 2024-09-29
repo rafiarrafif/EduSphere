@@ -6,7 +6,7 @@
     }"
   >
     <div
-      class="w-48 h-fit px-2 py-2 bg-darkGray-50 rounded-lg shadow-md flex flex-col"
+      class="child-safearea-lang w-48 h-fit px-2 py-2 bg-darkGray-50 rounded-lg shadow-md flex flex-col"
       v-click-outside="closelangingPageStore"
     >
       <button
@@ -88,7 +88,7 @@ const langPreference = useLangPreference();
 const { locale } = useI18n();
 
 const closelangingPageStore = () => {
-  landingPageStore.toogleLanguagePopupState();
+  landingPageStore.toggleLanguagePopupState();
 };
 
 const changeLang = (lang: string) => {

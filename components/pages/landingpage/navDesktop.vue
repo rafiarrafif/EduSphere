@@ -36,14 +36,18 @@
       />
     </div>
     <div class="flex items-center gap-2 w-fit mr-8 ml-2">
-      <div
-        class="h-9 w-9 flex justify-center items-center rounded-lg hover:bg-darkGray-200 transition-all cursor-pointer"
+      <button
+        @click.stop="showCartPopup"
+        class="parent-safearea-cart h-9 w-9 flex justify-center items-center rounded-lg hover:bg-darkGray-200 transition-all cursor-pointer"
+        :class="{
+          'bg-darkGray-200': landingPageStore.cartPopupState,
+        }"
       >
         <Icon name="solar:cart-large-2-linear" size="1.4em" />
-      </div>
+      </button>
       <div class="flex gap-2">
         <button
-          @click="toLogin"
+          @click.stop="toLogin"
           class="text-black bg-transparent text-sm py-3 px-5 rounded-lg font-semibold hover:bg-darkGray-200 transition-all"
         >
           {{ $t("logIn") }}
@@ -55,8 +59,8 @@
         </button>
       </div>
       <div
-        @click="showLanguagesPopup"
-        class="w-9 h-9 safe-areas flex justify-center items-center rounded-lg hover:bg-darkGray-200 transition-all cursor-pointer"
+        @click.stop="showLanguagesPopup"
+        class="parent-safearea-lang w-9 h-9 flex justify-center items-center rounded-lg hover:bg-darkGray-200 transition-all cursor-pointer"
         :class="{
           'bg-darkGray-200': landingPageStore.languagePopupState,
         }"
@@ -77,8 +81,11 @@ const isSearchActive = computed(() => landingPageStore.searchIconState);
 const isOnTop = computed(() => landingPageStore.isOnEdgeTop);
 const searchField = ref<HTMLInputElement | null>(null);
 
+const showCartPopup = () => {
+  landingPageStore.toggleCartPopupState();
+};
 const showLanguagesPopup = () => {
-  landingPageStore.toogleLanguagePopupState();
+  landingPageStore.toggleLanguagePopupState();
 };
 const switchSearchState = () => {
   landingPageStore.toggleSearchIcon();

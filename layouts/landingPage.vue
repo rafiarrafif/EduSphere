@@ -3,7 +3,7 @@
     <div v-if="landingPageStore.languagePopupState">
       <PagesLandingpageSelectLanguageDesktop />
     </div>
-    <div v-if="landingPageStore.storePopupState">
+    <div v-if="landingPageStore.cartPopupState">
       <PagesLandingpageEntryStorePopup />
     </div>
     <div class="w-full h-fit fixed z-[800]">

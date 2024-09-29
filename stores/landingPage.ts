@@ -7,7 +7,7 @@ interface landingPageStore {
   roadmapActive: number;
   hoveredCourseCard: number | null;
   languagePopupState: boolean;
-  storePopupState: boolean;
+  cartPopupState: boolean;
   sidebarState: boolean;
   sidebarComponent: string;
 }
@@ -20,7 +20,7 @@ export const useLandingPageStore = defineStore("landingPageStore", {
     roadmapActive: 1,
     hoveredCourseCard: null,
     languagePopupState: false,
-    storePopupState: true,
+    cartPopupState: false,
     sidebarState: false,
     sidebarComponent: "mainComponent",
   }),
@@ -43,11 +43,11 @@ export const useLandingPageStore = defineStore("landingPageStore", {
     setHoveredCard(cardID: number) {
       this.hoveredCourseCard = cardID;
     },
-    toogleLanguagePopupState() {
+    toggleLanguagePopupState() {
       this.languagePopupState = !this.languagePopupState;
     },
-    toogleStorePopupState() {
-      this.storePopupState = !this.storePopupState;
+    toggleCartPopupState() {
+      this.cartPopupState = !this.cartPopupState;
     },
     toggleSidebarState() {
       this.sidebarState = !this.sidebarState;

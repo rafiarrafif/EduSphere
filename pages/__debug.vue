@@ -1,12 +1,11 @@
 <template>
   <div
-    class="child-safearea-cart block fixed border border-darkGray-400 shadow-md z-[9999] h-fit w-96 bg-white rounded-lg pt-2 pl-6 pr-3 pb-4 transition-all"
+    class="block fixed border border-darkGray-400 shadow-md z-[9999] h-fit w-96 bg-white rounded-lg pt-2 pl-6 pr-3 pb-4 transition-all"
     :class="{
       'top-16 right-44': !isOnTop,
       'top-20 right-52': isOnTop,
       hidden: !isShow,
     }"
-    v-click-outside="closeCartPopup"
   >
     <div class="triangle"></div>
 
@@ -28,11 +27,7 @@
 import { useLandingPageStore } from "#imports";
 const landingPageStore = useLandingPageStore();
 const isOnTop = computed(() => landingPageStore.isOnEdgeTop);
-const isShow = true;
-
-const closeCartPopup = () => {
-  landingPageStore.toggleCartPopupState();
-};
+const isShow = computed(() => landingPageStore.cartPopupState);
 
 import { useCartShoppingStore } from "~/stores/cartShopping";
 const cartShoppingStore = useCartShoppingStore();

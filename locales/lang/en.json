@@ -8,6 +8,10 @@
   "showMore": "Show More",
   "hideMore": "Hide More",
 
+  "level.easy": "Easy",
+  "level.intermediate": "Intermediate",
+  "level.advance": "Advance",
+
   "landingPage.navbar.desktop.search": "What do you want to learn today?",
   "landingPage.hero.title.dontJust": "Don't Just",
   "landingPage.hero.title.learn": "Learn",
