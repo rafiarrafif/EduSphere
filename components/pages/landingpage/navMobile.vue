@@ -16,7 +16,7 @@
       <!-- <button class="max-sm:hidden">
         <Icon name="solar:cart-large-2-linear" size="1.6em" />
       </button> -->
-      <button>
+      <button @click="showSearch">
         <Icon name="solar:magnifer-linear" size="1.4em" class="mt-1" />
       </button>
     </div>
@@ -26,10 +26,13 @@
 
 <script lang="ts" setup>
 import { useLandingPageStore } from "#imports";
-
 const landingPageStore = useLandingPageStore();
 const showSidebar = () => {
   landingPageStore.toggleSidebarState();
+};
+
+const showSearch = () => {
+  landingPageStore.toggleSearchMobileState();
 };
 
 const handleScroll = () => {

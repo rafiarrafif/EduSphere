@@ -14,6 +14,9 @@
         <PagesLandingpageEntryStorePopup />
       </div>
     </div>
+    <div v-if="landingPageStore.searchMobileState">
+      <UiSearchMobile />
+    </div>
     <div class="w-full h-fit fixed z-[800]">
       <PagesLandingpageNavDesktop v-if="isDesktop" />
       <PagesLandingpageNavMobile v-if="isMobile" />
