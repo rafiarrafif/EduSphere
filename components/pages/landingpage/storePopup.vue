@@ -11,7 +11,7 @@
         <button
           class="w-full bg-accent-500 hover:bg-accent-400 text-primary-950 font-medium py-3 rounded-lg"
         >
-          Go to cart
+          {{ $t("landingpage.cart.checkout") }}
         </button>
       </div>
     </div>

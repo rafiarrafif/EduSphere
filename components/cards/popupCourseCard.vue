@@ -62,9 +62,9 @@
             class="ml-2 w-6 text-darkGray-950"
             size="1.4em"
           />
-          <span class="text-base font-semibold text-darkGray-950"
-            >Add to cart</span
-          >
+          <span class="text-base font-semibold text-darkGray-950">{{
+            $t("landingpage.cart.addToCart")
+          }}</span>
         </button>
         <button
           v-else
@@ -76,9 +76,9 @@
             class="ml-2 w-6 text-darkGray-50"
             size="1.4em"
           />
-          <span class="text-base font-semibold text-darkGray-50"
-            >Remove from cart</span
-          >
+          <span class="text-base font-semibold text-darkGray-50">{{
+            $t("landingpage.cart.removeFromCart")
+          }}</span>
         </button>
       </div>
     </div>

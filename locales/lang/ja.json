@@ -16,6 +16,11 @@
   "landingpage.sidebar.mobile.cart": "カート",
   "landingpage.sidebar.mobile.language": "言語",
 
+  "landingpage.cart.addToCart": "カートに追加",
+  "landingpage.cart.removeFromCart": "カートから削除",
+  "landingpage.cart.your": "あなたのカート",
+  "landingpage.cart.checkout": "チェックアウト",
+
   "landingPage.navbar.desktop.search": "今日は何を学びたいですか？",
   "landingPage.hero.title.dontJust": "ただ",
   "landingPage.hero.title.learn": "学ぶ",

@@ -16,6 +16,11 @@
   "landingpage.sidebar.mobile.cart": "Cart",
   "landingpage.sidebar.mobile.language": "Language",
 
+  "landingpage.cart.addToCart": "Add to Cart",
+  "landingpage.cart.removeFromCart": "Remove from cart",
+  "landingpage.cart.your": "Your cart",
+  "landingpage.cart.checkout": "Checkout",
+
   "landingPage.navbar.desktop.search": "What do you want to learn today?",
   "landingPage.hero.title.dontJust": "Don't Just",
   "landingPage.hero.title.learn": "Learn",

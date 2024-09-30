@@ -16,6 +16,11 @@
   "landingpage.sidebar.mobile.cart": "购物车",
   "landingpage.sidebar.mobile.language": "语言",
 
+  "landingpage.cart.addToCart": "加入购物车",
+  "landingpage.cart.removeFromCart": "从购物车移除",
+  "landingpage.cart.your": "你的购物车",
+  "landingpage.cart.checkout": "结账",
+
   "landingPage.navbar.desktop.search": "今天你想学习什么？",
   "landingPage.hero.title.dontJust": "不要只是",
   "landingPage.hero.title.learn": "学习",

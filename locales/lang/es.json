@@ -16,6 +16,11 @@
   "landingpage.sidebar.mobile.cart": "Carrito",
   "landingpage.sidebar.mobile.language": "Idioma",
 
+  "landingpage.cart.addToCart": "Añadir al carrito",
+  "landingpage.cart.removeFromCart": "Eliminar del carrito",
+  "landingpage.cart.your": "Tu carrito",
+  "landingpage.cart.checkout": "Pagar",
+
   "landingPage.navbar.desktop.search": "¿Qué quieres aprender hoy?",
   "landingPage.hero.title.dontJust": "No Solo",
   "landingPage.hero.title.learn": "Aprender",
@@ -212,6 +217,7 @@
   "data.courses.title.30005": "Diseño de Sonido para Videojuegos",
   "data.courses.description.30005": "Domina el arte del diseño de sonido y aprende a crear experiencias de audio inmersivas para videojuegos. Este curso cubre todo, desde efectos de sonido hasta música de fondo.",
   "data.courses.benefits[0].30005": "Efectos de Sonido: Aprende a crear e implementar efectos de sonido para diversas acciones en el juego.",
+  "data.courses.benefits[1].30005": "Música de fondo: Comprende cómo componer música que mejore la experiencia del jugador.",
   "data.courses.benefits[2].30005": "Integración de Audio: Utiliza el motor del juego para integrar audio en la jugabilidad de manera efectiva.",
   "data.courses.title.30006": "Modelado 3D para Desarrollo de Juegos",
   "data.courses.description.30006": "Aprende a crear modelos 3D detallados para videojuegos. Este curso enseña los fundamentos del modelado 3D, texturización y renderizado para su uso en motores de juego modernos.",

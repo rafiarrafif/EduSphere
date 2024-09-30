@@ -12,7 +12,9 @@
           <span class="font-sm text-blue-500">{{ $t("back") }}</span>
         </button>
         <div>
-          <span class="text-xl font-medium">Your Cart</span>
+          <span class="text-xl font-medium">{{
+            $t("landingpage.cart.your")
+          }}</span>
         </div>
         <div class="w-16"></div>
       </div>
@@ -31,7 +33,7 @@
             <button
               class="w-full bg-accent-500 hover:bg-accent-400 text-primary-950 font-medium py-3 rounded-lg"
             >
-              Checkout
+              {{ $t("landingpage.cart.checkout") }}
             </button>
           </div>
         </div>

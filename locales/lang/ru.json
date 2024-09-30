@@ -16,6 +16,11 @@
   "landingpage.sidebar.mobile.cart": "Корзина",
   "landingpage.sidebar.mobile.language": "Язык",
 
+  "landingpage.cart.addToCart": "Добавить в корзину",
+  "landingpage.cart.removeFromCart": "Удалить из корзины",
+  "landingpage.cart.your": "Ваша корзина",
+  "landingpage.cart.checkout": "Оформить заказ",
+
   "landingPage.navbar.desktop.search": "Что вы хотите узнать сегодня?",
   "landingPage.hero.title.dontJust": "Не просто",
   "landingPage.hero.title.learn": "Учиться",

@@ -16,6 +16,11 @@
   "landingpage.sidebar.mobile.cart": "Keranjang",
   "landingpage.sidebar.mobile.language": "Bahasa",
 
+  "landingpage.cart.addToCart": "Tambah ke keranjang",
+  "landingpage.cart.removeFromCart": "Hapus dari keranjang",
+  "landingpage.cart.your": "Keranjang Anda",
+  "landingpage.cart.checkout": "Pembayaran",
+
   "landingPage.navbar.desktop.search": "Apa yang ingin kamu pelajari hari ini?",
   "landingPage.hero.title.dontJust": "Jangan Hanya",
   "landingPage.hero.title.learn": "Belajar",

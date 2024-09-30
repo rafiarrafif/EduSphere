@@ -16,6 +16,11 @@
   "landingpage.sidebar.mobile.cart": "장바구니",
   "landingpage.sidebar.mobile.language": "언어",
 
+  "landingpage.cart.addToCart": "장바구니에 담기",
+  "landingpage.cart.removeFromCart": "장바구니에서 제거",
+  "landingpage.cart.your": "내 장바구니",
+  "landingpage.cart.checkout": "결제",
+
   "landingPage.navbar.desktop.search": "오늘 무엇을 배우고 싶으세요?",
   "landingPage.hero.title.dontJust": "단순히 하지 마세요",
   "landingPage.hero.title.learn": "배우세요",
