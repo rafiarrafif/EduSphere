@@ -13,7 +13,7 @@
         </h1>
       </div>
       <div class="mt-2">
-        <span class="text-xs text-darkGray-900">24 total hours</span>
+        <span class="text-xs text-darkGray-900">14 {{ $t("totalHours") }}</span>
         <span class="text-xs text-darkGray-900">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
         <span class="text-xs text-darkGray-900">Intermediate</span>
       </div>
