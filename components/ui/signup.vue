@@ -3,17 +3,19 @@
     class="fixed z-[9999] h-screen w-screen bg-black bg-opacity-40 backdrop-blur-md flex justify-center items-center"
   >
     <div
-      class="flex bg-primary-50 h-fit w-fit -mt-12 py-3 pl-3 pr-12 rounded-xl gap-14 drop-shadow-md animate__animated animate__bounceIn"
+      class="flex bg-primary-50 h-fit w-fit -mt-12 py-3 pl-3 pr-12 rounded-xl gap-14 drop-shadow-md animate__animated animate__bounceIn mx-4 max-md:px-8 max-sm:w-full max-sm:px-4 max-sm:mx-2 max-sm:mt-0"
       ref="signupCardElement"
       v-click-outside="closePopup"
     >
-      <div class="h-auto w-100 overflow-hidden rounded-lg shadow-md">
+      <div
+        class="h-auto w-100 overflow-hidden rounded-lg shadow-md max-lg:w-auto max-md:hidden"
+      >
         <img
           src="/assets/signup-jumbotron.jpeg"
           class="h-full w-full object-cover"
         />
       </div>
-      <div>
+      <div class="max-sm:w-full">
         <div class="my-8 flex flex-col gap-4">
           <h1 class="text-darkGray-950 text-4xl font-medium">
             Create an account
@@ -28,8 +30,8 @@
           >
           <div class="mt-8">
             <form class="flex flex-col gap-2" @submit.prevent="submit">
-              <div class="flex gap-2">
-                <div class="w-52">
+              <div class="flex gap-2 max-sm:flex-col">
+                <div class="w-52 max-sm:w-full">
                   <input
                     type="text"
                     v-model="firstname"
@@ -54,7 +56,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="w-52">
+                <div class="w-52 max-sm:w-full">
                   <input
                     type="text"
                     v-model="lastname"

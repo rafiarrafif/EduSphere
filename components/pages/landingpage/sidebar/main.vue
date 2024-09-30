@@ -6,14 +6,18 @@
         class="flex gap-3 px-3 py-2 rounded-lg hover:bg-darkGray-200"
       >
         <Icon name="solar:cart-large-2-linear" size="1.5em" />
-        <span class="font-medium">Cart</span>
+        <span class="font-medium">{{
+          $t("landingpage.sidebar.mobile.cart")
+        }}</span>
       </button>
       <button
         @click="changeLayout('langComponent')"
         class="flex gap-3 px-3 py-2 rounded-lg hover:bg-darkGray-200"
       >
         <Icon name="solar:earth-linear" size="1.4em" />
-        <span class="font-medium">Language</span>
+        <span class="font-medium">{{
+          $t("landingpage.sidebar.mobile.language")
+        }}</span>
       </button>
     </div>
     <div class="flex flex-col">

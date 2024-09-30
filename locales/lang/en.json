@@ -12,6 +12,9 @@
   "level.intermediate": "Intermediate",
   "level.advance": "Advance",
 
+  "landingpage.sidebar.mobile.cart": "Cart",
+  "landingpage.sidebar.mobile.language": "Language",
+
   "landingPage.navbar.desktop.search": "What do you want to learn today?",
   "landingPage.hero.title.dontJust": "Don't Just",
   "landingPage.hero.title.learn": "Learn",
