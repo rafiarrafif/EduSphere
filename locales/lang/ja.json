@@ -118,6 +118,10 @@
   "login.additional.oauth": "または、でログイン",
   "login.additional.forgotPassword": "パスワードを忘れた",
 
+  "signup.additional.title": "アカウントを作成",
+  "signup.additional.haveAccount": "既にアカウントをお持ちですか？",
+  "signup.additional.tnc[0]": "私は同意します",
+  "signup.additional.tnc[1]": "利用規約",
   "signup.input.firstname": "名",
   "signup.input.lastname": "姓",
   "signup.input.firstname.err": "最小3文字",

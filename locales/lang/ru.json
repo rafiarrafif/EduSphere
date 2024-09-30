@@ -118,6 +118,10 @@
   "login.additional.oauth": "или войти через",
   "login.additional.forgotPassword": "Забыли пароль",
 
+  "signup.additional.title": "Создать аккаунт",
+  "signup.additional.haveAccount": "Уже есть аккаунт?",
+  "signup.additional.tnc[0]": "Я согласен с",
+  "signup.additional.tnc[1]": "Условиями и положениями",
   "signup.input.firstname": "Имя",
   "signup.input.lastname": "Фамилия",
   "signup.input.firstname.err": "Минимум 3 символа",

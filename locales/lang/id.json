@@ -118,6 +118,10 @@
   "login.additional.oauth": "atau masuk dengan",
   "login.additional.forgotPassword": "Lupa Kata Sandi",
 
+  "signup.additional.title": "Buat akun",
+  "signup.additional.haveAccount": "Sudah punya akun?",
+  "signup.additional.tnc[0]": "Saya setuju dengan",
+  "signup.additional.tnc[1]": "Syarat & Ketentuan",
   "signup.input.firstname": "Nama Depan",
   "signup.input.lastname": "Nama Akhir",
   "signup.input.firstname.err": "Min 3 karakter",

@@ -18,14 +18,14 @@
       <div class="max-sm:w-full">
         <div class="my-8 flex flex-col gap-4">
           <h1 class="text-darkGray-950 text-4xl font-medium">
-            Create an account
+            {{ $t("signup.additional.title") }}
           </h1>
           <span class="text-sm text-darkGray-900"
-            >Already have an account?
+            >{{ $t("signup.additional.haveAccount") }}
             <span
               class="text-accent-600 underline cursor-pointer"
               @click="toLogin"
-              >login</span
+              >{{ $t("logIn") }}</span
             ></span
           >
           <div class="mt-8">
@@ -149,10 +149,10 @@
                   </label>
                 </div>
                 <span class="text-sm text-darkGray-900"
-                  >I agree to the
-                  <span class="text-accent-600 underline"
-                    >Terms & Conditions</span
-                  ></span
+                  >{{ $t("signup.additional.tnc[0]") }}
+                  <span class="text-accent-600 underline">{{
+                    $t("signup.additional.tnc[1]")
+                  }}</span></span
                 >
               </div>
               <div class="mt-8">

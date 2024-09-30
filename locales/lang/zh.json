@@ -118,6 +118,10 @@
   "login.additional.oauth": "或使用",
   "login.additional.forgotPassword": "忘记密码",
 
+  "signup.additional.title": "创建账户",
+  "signup.additional.haveAccount": "已经有账户了？",
+  "signup.additional.tnc[0]": "我同意",
+  "signup.additional.tnc[1]": "条款和条件",
   "signup.input.firstname": "名字",
   "signup.input.lastname": "姓氏",
   "signup.input.firstname.err": "至少3个字符",

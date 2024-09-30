@@ -118,6 +118,10 @@
   "login.additional.oauth": "o iniciar sesión con",
   "login.additional.forgotPassword": "¿Olvidaste tu contraseña?",
 
+  "signup.additional.title": "Crear una cuenta",
+  "signup.additional.haveAccount": "¿Ya tienes una cuenta?",
+  "signup.additional.tnc[0]": "Estoy de acuerdo con los",
+  "signup.additional.tnc[1]": "Términos y Condiciones",
   "signup.input.firstname": "Nombre",
   "signup.input.lastname": "Apellido",
   "signup.input.firstname.err": "Mínimo 3 caracteres",

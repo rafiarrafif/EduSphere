@@ -118,6 +118,10 @@
   "login.additional.oauth": "or log-in with",
   "login.additional.forgotPassword": "Forgot Password",
 
+  "signup.additional.title": "Create an account",
+  "signup.additional.haveAccount": "Already have an account?",
+  "signup.additional.tnc[0]": "I agree to the",
+  "signup.additional.tnc[1]": "Terms & Conditions",
   "signup.input.firstname": "First Name",
   "signup.input.lastname": "Last Name",
   "signup.input.firstname.err": "Min 3 character",

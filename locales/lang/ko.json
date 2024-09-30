@@ -118,6 +118,10 @@
   "login.additional.oauth": "또는 다음으로 로그인",
   "login.additional.forgotPassword": "비밀번호를 잊으셨나요",
 
+  "signup.additional.title": "계정 만들기",
+  "signup.additional.haveAccount": "이미 계정이 있습니까?",
+  "signup.additional.tnc[0]": "동의합니다",
+  "signup.additional.tnc[1]": "이용 약관",
   "signup.input.firstname": "이름",
   "signup.input.lastname": "성",
   "signup.input.firstname.err": "최소 3자",
