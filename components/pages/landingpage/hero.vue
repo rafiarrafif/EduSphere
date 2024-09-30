@@ -42,6 +42,7 @@
             class="max-sm:px-16"
           >
             <button
+              @click="toSignup"
               class="bg-secondary-400 hover:bg-secondary-500 py-4 pl-12 pr-10 max-sm:pl-12 max-sm:pr-10 max-sm:w-full max-sm:justify-center flex items-center gap-2 rounded-lg transition-all"
             >
               <span class="text-sm text-black font-medium">{{
@@ -87,6 +88,18 @@
     <!-- <div id="bg-connector" class="w-full h-52 mt-48 max-sm:-mt-4"></div> -->
   </div>
 </template>
+
+<script lang="ts" setup>
+import { usePopupStore } from "~/stores/popup";
+const popupStore = usePopupStore();
+import { useSignupCompStore } from "#imports";
+const signupCompStore = useSignupCompStore();
+const toSignup = () => {
+  popupStore.setPopupHide();
+  window.history.pushState(null, "", "/signup");
+  signupCompStore.toggleSignupVisibility(true);
+};
+</script>
 
 <style scoped>
 #bg-connectorad {
