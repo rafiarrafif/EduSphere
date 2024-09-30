@@ -18,6 +18,7 @@
     </div>
     <div class="flex flex-col">
       <button
+        @click="toSignup"
         class="py-3 text-sm font-medium w-full bg-primary-950 text-primary-50 rounded-lg"
       >
         {{ $t("signUp") }}
@@ -49,5 +50,13 @@ const toLogin = () => {
   landingPageStore.toggleSidebarState();
   window.history.pushState(null, "", "/login");
   loginCompStore.toggleLoginVisibility(true);
+};
+
+import { useSignupCompStore } from "#imports";
+const signupCompStore = useSignupCompStore();
+const toSignup = () => {
+  landingPageStore.toggleSidebarState();
+  window.history.pushState(null, "", "/signup");
+  signupCompStore.toggleSignupVisibility(true);
 };
 </script>

@@ -115,6 +115,12 @@
   "login.additional.oauth": "or log-in with",
   "login.additional.forgotPassword": "Forgot Password",
 
+  "signup.input.firstname": "First Name",
+  "signup.input.lastname": "Last Name",
+  "signup.input.firstname.err": "Min 3 character",
+  "signup.input.submit": "Register",
+  "signup.additional.orRegisterWith": "Or register with",
+
   "data.courses.title.10001": "VueJS Full Class - Vue Beginner to Master",
   "data.courses.description.10001": "Learn how to build modern, scalable, and reactive web applications with Vue.js. This course takes you from the basics of Vue to advanced techniques, empowering you to create dynamic user experiences effortlessly.",
   "data.courses.benefits[0].10001": "Vue.js Fundamentals: Master reactive data binding, directives, and Vue component architecture.",

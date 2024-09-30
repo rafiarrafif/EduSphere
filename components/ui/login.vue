@@ -70,7 +70,8 @@
                 {{ $t("login.input.submit") }}
               </button>
               <button
-                type="submit"
+                type="button"
+                @click="toSignup"
                 class="w-full py-3 px-6 mt-1 rounded-lg text-accent-600 bg-transparent hover:bg-darkGray-200 focus:outline-none transition-all text-sm font-medium"
               >
                 {{ $t("login.additional.register") }}
@@ -153,5 +154,15 @@ const submit = () => {
   if (!emailErr.value && !passErr.value) {
     console.log("Login successful!");
   }
+};
+
+import { useSignupCompStore } from "#imports";
+const signupCompStore = useSignupCompStore();
+const toSignup = () => {
+  closePopup();
+  setTimeout(() => {
+    window.history.pushState(null, "", "/signup");
+    signupCompStore.toggleSignupVisibility(true);
+  }, 600);
 };
 </script>

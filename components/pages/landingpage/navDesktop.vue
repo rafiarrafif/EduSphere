@@ -53,6 +53,7 @@
           {{ $t("logIn") }}
         </button>
         <button
+          @click.stop="toSignup"
           class="bg-black text-white text-sm py-3 px-5 font-semibold rounded-lg hover:bg-darkGray-950 transition-all"
         >
           {{ $t("signUp") }}
@@ -130,5 +131,12 @@ const toLogin = () => {
   popupStore.setPopupHide();
   window.history.pushState(null, "", "/login");
   loginCompStore.toggleLoginVisibility(true);
+};
+import { useSignupCompStore } from "#imports";
+const signupCompStore = useSignupCompStore();
+const toSignup = () => {
+  popupStore.setPopupHide();
+  window.history.pushState(null, "", "/signup");
+  signupCompStore.toggleSignupVisibility(true);
 };
 </script>

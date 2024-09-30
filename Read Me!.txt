@@ -1,0 +1,22 @@
+=== CARA MENJALANKAN PROJECT KAMI ===
+Pre-requisite = 
+	- Node >= v20.12.0
+
+
+1. Bundle Production (PALING DIREKOMENDASIKAN)
+	Tidak perlu mengkonfigurasi apapun, bisa langsung diakses dan minim terjadi bug atau error
+	a. Masuk ke dalam folder "build"
+	b. Lalu ketikan perintah "node ./server/index.mjs"
+
+2. Source Code (TIDAK DIREKOMENDASIKAN)
+	Perlu untuk mengkonfigurasi dan menginstall semua paket, Gunakan hanya untuk debugging saja
+	a. Masuk ke dalam folder "src"
+	b. Install semua package dengan ketik "npm i"
+	c. Run menggunakan mode developer dengan ketik "npm run dev"
+
+
+
+
+note: kami menyediakan alternatif yang dengan sangat mudah, cepat, dan dapat diakses dimana saja hanya cukup membuka "iitc.nounoz.com"
+
+Build with ❤️ by ABBS Team

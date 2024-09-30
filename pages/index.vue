@@ -1,6 +1,7 @@
 <template>
   <div class="w-full">
     <UiLogin v-if="loginCompStore.isLoginVisible" />
+    <UiSignup v-if="signupCompStore.isSignupVisible" />
     <PagesLandingpageHero />
     <PagesLandingpageSponsors />
     <PagesLandingpageSelectCourse />
@@ -17,6 +18,9 @@
 <script lang="ts" setup>
 import { useLoginCompStore } from "#imports";
 const loginCompStore = useLoginCompStore();
+
+import { useSignupCompStore } from "#imports";
+const signupCompStore = useSignupCompStore();
 
 useHead({
   title: "EduSphere - Learning Environment",
