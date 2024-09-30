@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex justify-center w-full bg-secondary-500 py-40 mt-10 max-lg:mt-0 relative"
+    class="flex items-center justify-center w-full bg-secondary-500 py-40 mt-10 max-lg:mt-0 relative"
   >
     <div class="w-full h-100"></div>
     <div
-      class="flex flex-col gap-8 w-148 px-12 py-12 rounded-lg shadow bg-primary-50 mx-12 absolute z-10 max-md:mx-4 max-md:px-8 max-sm:mx-2 max-sm:px-4"
+      class="flex flex-col gap-8 w-148 px-12 py-12 rounded-lg shadow bg-primary-50 mx-12 absolute z-10 max-lg:w-11/12 max-md:mx-4 max-md:px-8 max-sm:mx-2 max-sm:px-4"
     >
       <div
         class="flex flex-col text-center mx-20 gap-2 max-lg:mx-12 max-md:mx-6 max-sm:mx-2"

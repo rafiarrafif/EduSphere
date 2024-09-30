@@ -8,7 +8,7 @@
       >
         <img
           src="/assets/faq.png"
-          class="absolute w-full h-fit bottom-0 max-lg:static max-lg:w-64"
+          class="absolute w-full h-auto bottom-0 max-lg:static max-lg:w-64"
           draggable="false"
         />
       </div>

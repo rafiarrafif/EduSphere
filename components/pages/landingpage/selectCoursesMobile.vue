@@ -1,5 +1,17 @@
 <template>
   <div class="w-fill-available mx-6">
+    <div
+      v-if="detailCardOpen && hoveredCourseCard"
+      class="absolute z-[99] transform -translate-x-1/2"
+      :style="{
+        top: `${courseCardPosition.top}px`,
+        left: `${courseCardPosition.left}px`,
+      }"
+      @mouseenter="holdPopup"
+      @mouseleave="closePopupWithDelay"
+    >
+      <CardsPopupCourseCard :course="hoveredCourseCard" />
+    </div>
     <div class="bg-darkGray-400 w-fill-available h-1px"></div>
     <div
       class="w-full transition-all"
@@ -29,6 +41,8 @@
           :key="index"
           class="animate__animated animate__fadeInDown"
           style="animation-duration: 0.3s"
+          @mouseenter="showPopup(course, $event)"
+          @mouseleave="closePopupWithDelay"
         >
           <CardsSelectCoursesLandingpage
             :id="course.id"
@@ -75,6 +89,38 @@ const activeRoadmap = ref<number | null>(null);
 const toggleAccordion = (roadmapID: number) => {
   activeRoadmap.value = activeRoadmap.value === roadmapID ? null : roadmapID;
 };
+
+let timeoutCard: ReturnType<typeof setTimeout> | null = null;
+const detailCardOpen = ref<boolean>(false);
+const hoveredCourseCard = ref<null | object>(null);
+const courseCardPosition = ref({ top: 0, left: 0 });
+function showPopup(course: { [key: string]: any }, event: MouseEvent) {
+  if (timeoutCard) {
+    clearTimeout(timeoutCard);
+    timeoutCard = null;
+  }
+  detailCardOpen.value = true;
+  hoveredCourseCard.value = course;
+  const card = event.currentTarget as HTMLElement;
+  const rect = card.getBoundingClientRect();
+  const scrollX = window.innerWidth / 2;
+  const scrollY = window.scrollY || document.documentElement.scrollTop;
+  courseCardPosition.value = {
+    top: rect.bottom + scrollY,
+    left: scrollX,
+  };
+}
+function holdPopup() {
+  if (timeoutCard) {
+    clearTimeout(timeoutCard);
+    timeoutCard = null;
+  }
+}
+function closePopupWithDelay() {
+  timeoutCard = setTimeout(() => {
+    detailCardOpen.value = false;
+  }, 100);
+}
 </script>
 
 <style scoped>

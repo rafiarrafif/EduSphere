@@ -38,7 +38,7 @@
     <div class="flex items-center gap-2 w-fit mr-8 ml-2">
       <button
         @click.stop="showCartPopup"
-        class="parent-safearea-cart h-9 w-9 flex justify-center items-center rounded-lg hover:bg-darkGray-200 transition-all cursor-pointer"
+        class="safe-areas h-9 w-9 flex justify-center items-center rounded-lg hover:bg-darkGray-200 transition-all cursor-pointer"
         :class="{
           'bg-darkGray-200': popupStore.popupComponent == 'landingpage.cart',
         }"
@@ -60,7 +60,7 @@
       </div>
       <div
         @click.stop="showLanguagesPopup"
-        class="parent-safearea-lang w-9 h-9 flex justify-center items-center rounded-lg hover:bg-darkGray-200 transition-all cursor-pointer"
+        class="safe-areas w-9 h-9 flex justify-center items-center rounded-lg hover:bg-darkGray-200 transition-all cursor-pointer"
         :class="{
           'bg-darkGray-200': popupStore.popupComponent == 'landingpage.lang',
         }"
@@ -86,10 +86,17 @@ import { usePopupStore } from "~/stores/popup";
 const popupStore = usePopupStore();
 
 const showCartPopup = () => {
-  popupStore.setPopupShow("landingpage.cart");
+  setPopupShow("landingpage.cart");
 };
 const showLanguagesPopup = () => {
-  popupStore.setPopupShow("landingpage.lang");
+  setPopupShow("landingpage.lang");
+};
+const setPopupShow = (popup: string) => {
+  if (popupStore.popupVisible) {
+    popupStore.setPopupHide();
+  } else {
+    popupStore.setPopupShow(popup);
+  }
 };
 const switchSearchState = () => {
   landingPageStore.toggleSearchIcon();

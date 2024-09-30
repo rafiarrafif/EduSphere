@@ -33,10 +33,16 @@
             {{ $t("landingPage.hero.description.second") }}
           </p>
         </div>
-        <div class="flex justify-start gap-6 mt-10 max-xl:justify-center">
-          <nuxt-link to="" v-show-when-see:animate__fadeInLeft>
+        <div
+          class="flex justify-start gap-6 mt-10 max-xl:justify-center max-sm:flex-col max-sm:gap-2"
+        >
+          <nuxt-link
+            to=""
+            v-show-when-see:animate__fadeInLeft
+            class="max-sm:px-16"
+          >
             <button
-              class="bg-secondary-400 hover:bg-secondary-500 py-4 pl-12 pr-10 max-sm:pl-12 max-sm:pr-10 flex items-center gap-2 rounded-lg transition-all"
+              class="bg-secondary-400 hover:bg-secondary-500 py-4 pl-12 pr-10 max-sm:pl-12 max-sm:pr-10 max-sm:w-full max-sm:justify-center flex items-center gap-2 rounded-lg transition-all"
             >
               <span class="text-sm text-black font-medium">{{
                 $t("signUp")
@@ -48,9 +54,13 @@
               />
             </button>
           </nuxt-link>
-          <nuxt-link to="" v-show-when-see:animate__fadeInRight>
+          <nuxt-link
+            to=""
+            v-show-when-see:animate__fadeInRight
+            class="max-sm:px-16"
+          >
             <button
-              class="py-4 pl-8 pr-6 flex items-center gap-2 rounded-lg hover:bg-darkGray-200 transition-all"
+              class="py-4 pl-8 pr-6 flex items-center gap-2 rounded-lg hover:bg-darkGray-200 max-sm:w-full max-sm:justify-center transition-all"
             >
               <span class="text-sm text-black font-medium">{{
                 $t("tryDemo")
@@ -69,7 +79,7 @@
       >
         <img
           src="/assets/hero.png"
-          class="h-fit w-136 -mt-40 max-2xl:w-128 max-2xl:-mt-28 max-xl:mt-0"
+          class="h-auto w-136 -mt-40 max-2xl:w-128 max-2xl:-mt-28 max-xl:mt-0"
           draggable="false"
         />
       </div>

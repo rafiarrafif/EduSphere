@@ -8,7 +8,7 @@
     >
       <img
         src="/assets/jumbotron_1.png"
-        class="h-fit w-110 max-xl:w-96 transition-all"
+        class="h-auto w-110 max-xl:w-96 transition-all"
         draggable="false"
       />
     </div>
