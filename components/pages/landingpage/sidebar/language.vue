@@ -21,12 +21,6 @@
         <span class="font-medium">Indonesia</span>
       </button>
       <button
-        @click="changeLang('hi')"
-        class="flex gap-3 px-4 py-2 rounded-lg hover:bg-darkGray-200"
-      >
-        <span class="font-medium">Hindi</span>
-      </button>
-      <button
         @click="changeLang('ja')"
         class="flex gap-3 px-4 py-2 rounded-lg hover:bg-darkGray-200"
       >
@@ -45,34 +39,16 @@
         <span class="font-medium">Korean</span>
       </button>
       <button
-        @click="changeLang('ar')"
-        class="flex gap-3 px-4 py-2 rounded-lg hover:bg-darkGray-200"
-      >
-        <span class="font-medium">Arabic</span>
-      </button>
-      <button
         @click="changeLang('ru')"
         class="flex gap-3 px-4 py-2 rounded-lg hover:bg-darkGray-200"
       >
         <span class="font-medium">Russian</span>
       </button>
       <button
-        @click="changeLang('uz')"
-        class="flex gap-3 px-4 py-2 rounded-lg hover:bg-darkGray-200"
-      >
-        <span class="font-medium">Uzbek</span>
-      </button>
-      <button
         @click="changeLang('es')"
         class="flex gap-3 px-4 py-2 rounded-lg hover:bg-darkGray-200"
       >
         <span class="font-medium">Spanish</span>
-      </button>
-      <button
-        @click="changeLang('nl')"
-        class="flex gap-3 px-4 py-2 rounded-lg hover:bg-darkGray-200"
-      >
-        <span class="font-medium">Dutch</span>
       </button>
     </div>
   </div>

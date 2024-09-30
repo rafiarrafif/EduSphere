@@ -22,12 +22,6 @@
         Indonesia
       </button>
       <button
-        @click="changeLang('hi')"
-        class="w-full text-sm py-1.5 pl-3 rounded text-left hover:bg-darkGray-200"
-      >
-        Hindi
-      </button>
-      <button
         @click="changeLang('ja')"
         class="w-full text-sm py-1.5 pl-3 rounded text-left hover:bg-darkGray-200"
       >
@@ -46,34 +40,16 @@
         Korean
       </button>
       <button
-        @click="changeLang('ar')"
-        class="w-full text-sm py-1.5 pl-3 rounded text-left hover:bg-darkGray-200"
-      >
-        Arabic
-      </button>
-      <button
         @click="changeLang('ru')"
         class="w-full text-sm py-1.5 pl-3 rounded text-left hover:bg-darkGray-200"
       >
         Russian
       </button>
       <button
-        @click="changeLang('uz')"
-        class="w-full text-sm py-1.5 pl-3 rounded text-left hover:bg-darkGray-200"
-      >
-        Uzbek
-      </button>
-      <button
         @click="changeLang('es')"
         class="w-full text-sm py-1.5 pl-3 rounded text-left hover:bg-darkGray-200"
       >
         Spanish
-      </button>
-      <button
-        @click="changeLang('nl')"
-        class="w-full text-sm py-1.5 pl-3 rounded text-left hover:bg-darkGray-200"
-      >
-        Dutch
       </button>
     </div>
   </div>

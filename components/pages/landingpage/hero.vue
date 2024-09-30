@@ -55,8 +55,8 @@
               />
             </button>
           </nuxt-link>
-          <nuxt-link
-            to=""
+          <a
+            href="/dashboard"
             v-show-when-see:animate__fadeInRight
             class="max-sm:px-16"
           >
@@ -72,7 +72,7 @@
                 class="text-black"
               />
             </button>
-          </nuxt-link>
+          </a>
         </div>
       </div>
       <div

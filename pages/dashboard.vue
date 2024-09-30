@@ -1,30 +1,22 @@
 <template>
-  <div class="flex justify-center">
-    <main class="full-w">
-      <div id="highlight">
-        <PagesHomeHighlights />
-      </div>
-      <div>
-        <div class="w-3 h-3 bg-primary-950"></div>
-        <div class="w-3 h-3 bg-primary-900"></div>
-        <div class="w-3 h-3 bg-primary-800"></div>
-        <div class="w-3 h-3 bg-primary-700"></div>
-        <div class="w-3 h-3 bg-primary-600"></div>
-        <div class="w-3 h-3 bg-primary-500"></div>
-        <div class="w-3 h-3 bg-primary-400"></div>
-        <div class="w-3 h-3 bg-primary-300"></div>
-        <div class="w-3 h-3 bg-primary-200"></div>
-        <div class="w-3 h-3 bg-primary-100"></div>
-        <div class="w-3 h-3 bg-primary-50"></div>
-      </div>
-    </main>
+  <div class="flex flex-col items-center justify-center mt-24">
+    <Icon
+      name="solar:confounded-square-bold-duotone"
+      size="4.8em"
+      class="text-darkGray-800"
+    />
+    <h1 class="text-xl font-semibold text-darkGray-950 mt-4">Dashboard Demo</h1>
+    <p class="text-sm font-medium text-darkGray-900">
+      This is just a demo page, there's nothing here.
+    </p>
+    <a href="/">
+      <button
+        class="text-sm font-medium py-3 px-8 rounded-lg mt-4 bg-accent-500 text-darkGray-950"
+      >
+        Back to Landing Page
+      </button>
+    </a>
   </div>
 </template>
 
-<style>
-.full-w {
-  margin-top: 24px;
-  width: 94%;
-  position: relative;
-}
-</style>
+<script lang="ts" setup></script>
