@@ -1,5 +1,11 @@
 <template>
   <div>
+    <div
+      v-if="landingPageStore.cartPageState"
+      class="fixed z-[999] top-0 left-0 h-full w-full"
+    >
+      <PagesLandingpageCartPopupMobile />
+    </div>
     <div v-if="popupStore.popupVisible">
       <div v-if="popupStore.popupComponent === 'landingpage.lang'">
         <PagesLandingpageSelectLanguageDesktop />

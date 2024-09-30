@@ -10,6 +10,7 @@ interface landingPageStore {
   cartPopupState: boolean;
   sidebarState: boolean;
   sidebarComponent: string;
+  cartPageState: boolean;
 }
 
 export const useLandingPageStore = defineStore("landingPageStore", {
@@ -23,6 +24,7 @@ export const useLandingPageStore = defineStore("landingPageStore", {
     cartPopupState: false,
     sidebarState: false,
     sidebarComponent: "mainComponent",
+    cartPageState: false,
   }),
   actions: {
     setFocusSearch(el: HTMLInputElement) {
@@ -54,6 +56,9 @@ export const useLandingPageStore = defineStore("landingPageStore", {
     },
     setSidebarComponent(component: string) {
       this.sidebarComponent = component;
+    },
+    toggleCartPageState() {
+      this.cartPageState = !this.cartPageState;
     },
   },
 });

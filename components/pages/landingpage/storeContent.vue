@@ -15,10 +15,18 @@
         Rp{{ formatPrice(props.item.price) }}
       </h1>
     </div>
+    <div>
+      <button class="w-8 h-8" @click="deleteItem(props.item.id)">
+        <Icon name="solar:trash-bin-2-bold" size="1.2em" class="text-red-500" />
+      </button>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { useCartShoppingStore } from "#imports";
+const cartShoppingStore = useCartShoppingStore();
+
 import type { CartItems } from "~/types/cartIems";
 const props = defineProps<{ item: CartItems }>();
 
@@ -30,5 +38,9 @@ function formatMentor(input: string): string {
 }
 function formatPrice(input: number): string {
   return input.toLocaleString("en-US");
+}
+
+function deleteItem(id: number): void {
+  cartShoppingStore.removeFromCart(id);
 }
 </script>

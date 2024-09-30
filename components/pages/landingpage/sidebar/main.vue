@@ -1,6 +1,9 @@
 <template>
   <div class="flex flex-col gap-1 mt-8">
-    <button class="flex gap-3 px-3 py-2 rounded-lg hover:bg-darkGray-200">
+    <button
+      @click="openCartPage"
+      class="flex gap-3 px-3 py-2 rounded-lg hover:bg-darkGray-200"
+    >
       <Icon name="solar:cart-large-2-linear" size="1.5em" />
       <span class="font-medium">Cart</span>
     </button>
@@ -20,5 +23,8 @@ const landingPageStore = useLandingPageStore();
 
 const changeLayout = (component: string) => {
   landingPageStore.setSidebarComponent(component);
+};
+const openCartPage = () => {
+  landingPageStore.toggleCartPageState();
 };
 </script>
