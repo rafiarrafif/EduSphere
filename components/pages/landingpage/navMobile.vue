@@ -13,9 +13,9 @@
     </div>
     <div class="h-full w-6"></div>
     <div class="flex items-center gap-6 absolute h-full w-fit right-8">
-      <button class="max-sm:hidden">
+      <!-- <button class="max-sm:hidden">
         <Icon name="solar:cart-large-2-linear" size="1.6em" />
-      </button>
+      </button> -->
       <button>
         <Icon name="solar:magnifer-linear" size="1.4em" class="mt-1" />
       </button>

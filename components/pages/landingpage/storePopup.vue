@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="overflow-y-scroll pr-3 max-h-96">
+    <div class="overflow-y-auto pr-3 max-h-96">
       <div v-for="(item, index) in cartData" :key="index">
         <PagesLandingpageStoreContent :item />
       </div>
