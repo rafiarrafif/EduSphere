@@ -42,7 +42,7 @@
         <div class="h-fit text-accent-950 mt-4 flex flex-col max-sm:mt-6">
           <h1 class="font-extrabold text-2xl max-sm:text-center">Contact</h1>
           <p class="font-medium mt-2 max-sm:text-center">+62 857-0070-8384</p>
-          <p class="font-medium max-sm:text-center">mikasa@nounoz.com</p>
+          <p class="font-medium max-sm:text-center">contact@nounoz.com</p>
         </div>
       </div>
       <div class="px-32 mt-6">
@@ -50,8 +50,8 @@
       </div>
       <div class="flex flex-col justify-center text-center text-sm mt-6">
         <h1 class="text-accent-800">
-          Created for the Intermedia Amikom competition. Organizers can share
-          it, but selling is prohibited.
+          Created for the De Codee Dehasen University. Organizers can share it,
+          but selling is prohibited.
         </h1>
         <h1 class="text-accent-900">Copyright remains with the ABBS Team.</h1>
       </div>
