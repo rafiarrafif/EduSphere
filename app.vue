@@ -16,13 +16,34 @@ const { locale } = useI18n();
 const langPreference = useLangPreference();
 locale.value = langPreference.locale;
 
+import { useDeviceDetection } from "#imports";
+useDeviceDetection();
+import { useDeviceType } from "#imports";
+const deviceType = useDeviceType();
+const isMobile = ref(false);
+watch(
+  () => deviceType.deviceType,
+  (newDeviceType) => {
+    isMobile.value = newDeviceType === "mobile" || newDeviceType === "tablet";
+  }
+);
+
 const route = useRoute();
 const layout = ref<string>();
-if (route.path === "/" || route.path === "/login" || route.path === "/signup") {
-  layout.value = "landing-page";
-} else {
-  layout.value = "desktop-student";
-}
+watch(
+  [() => route.path, isMobile],
+  ([currentPath, mobile]) => {
+    layout.value =
+      currentPath === "/" ||
+      currentPath === "/login" ||
+      currentPath === "/signup"
+        ? "landing-page"
+        : mobile
+        ? "mobile-student"
+        : "desktop-student";
+  },
+  { immediate: true }
+);
 
 const isLoading = ref(true);
 onMounted(() => {
